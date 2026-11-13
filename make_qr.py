@@ -24,7 +24,12 @@ def pages_url(owner: str, repo: str) -> str:
 
 
 def svg_text(url: str) -> str:
-    """The QR as bare inline SVG markup (no XML prologue, no xmlns needed in HTML)."""
+    """The QR as bare inline SVG markup (no XML prologue, no xmlns needed in HTML).
+
+    A viewBox is added because the page sizes the code with CSS: an <svg> with
+    only width/height attributes does not scale to a smaller box, it clips —
+    which silently cut about a quarter off the code on its first try.
+    """
     qr = segno.make(url, error="M")           # 'M' = 15 % recovery, plenty here
     qr.save("qr.svg", kind="svg", scale=4, border=4)   # standalone copy, with xmlns
     data = qr.svg_inline(scale=4, border=4)
@@ -32,6 +37,15 @@ def svg_text(url: str) -> str:
         data = data.decode("utf-8")
     if not data.lstrip().startswith("<svg"):
         data = data[data.index("<svg"):]
+    tag_end = data.index(">")
+    tag = data[:tag_end]
+    if "viewbox" not in tag.lower():
+        w = re.search(r'width="(\d+)', tag)
+        h = re.search(r'height="(\d+)', tag)
+        if w and h:
+            tag += f' viewBox="0 0 {w.group(1)} {h.group(1)}"' \
+                   ' preserveAspectRatio="xMidYMid meet"'
+            data = tag + data[tag_end:]
     return data.strip()
 
 
@@ -42,11 +56,13 @@ def main() -> int:
     svg = svg_text(url)
 
     html = open("index.html", encoding="utf-8").read()
-    if MARKER in html:                          # first run: fill the placeholder
-        html = html.replace(MARKER, f'{START}\n{svg}\n{END}')
-    elif START in html:                         # regenerate in place
+    # the placeholder comment and the opening marker are the same text, so the
+    # filled case has to be recognised first or the code would be inserted twice
+    if START in html and END in html:            # regenerate in place
         html = re.sub(re.escape(START) + r".*?" + re.escape(END),
                       f'{START}\n{svg}\n{END}', html, flags=re.S)
+    elif MARKER in html:                         # first run: fill the placeholder
+        html = html.replace(MARKER, f'{START}\n{svg}\n{END}')
     else:
         sys.exit("index.html has no QR_SVG marker to fill")
     with open("index.html", "w", encoding="utf-8") as f:
