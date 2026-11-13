@@ -1,0 +1,92 @@
+variant,seed,net,train,epochs,val29,cam232,hist120,secs,change
+baseline,0,mobilenet,107,15,0.4483,0.3750,0.3583,4,
+baseline,1,mobilenet,107,15,0.6207,0.5862,0.5000,3,
+baseline,2,mobilenet,107,15,0.6207,0.6293,0.5583,3,
+colour,0,mobilenet,107,15,0.6897,0.5690,0.4667,3,ColorJitter=True
+colour,1,mobilenet,107,15,0.6552,0.6897,0.5917,3,ColorJitter=True
+colour,2,mobilenet,107,15,0.7241,0.6724,0.5000,4,ColorJitter=True
+geom,0,mobilenet,107,15,0.6207,0.5043,0.4417,3,crop/flip/rotation=True
+geom,1,mobilenet,107,15,0.5862,0.6466,0.4500,3,crop/flip/rotation=True
+geom,2,mobilenet,107,15,0.7241,0.5259,0.4917,3,crop/flip/rotation=True
+aug,0,mobilenet,107,15,0.6552,0.6336,0.6083,4,crop/flip/rotation=True; ColorJitter=True
+aug,1,mobilenet,107,15,0.6207,0.6897,0.5833,4,crop/flip/rotation=True; ColorJitter=True
+aug,2,mobilenet,107,15,0.8276,0.7241,0.6417,4,crop/flip/rotation=True; ColorJitter=True
+frozen,0,mobilenet,107,15,0.5862,0.6078,0.4000,1,frozen backbone=True
+frozen,1,mobilenet,107,15,0.6207,0.6681,0.4250,1,frozen backbone=True
+frozen,2,mobilenet,107,15,0.6552,0.6552,0.4417,1,frozen backbone=True
+cosine,0,mobilenet,107,15,0.6207,0.5345,0.4500,3,cosine LR=True
+cosine,1,mobilenet,107,15,0.6552,0.6250,0.4333,3,cosine LR=True
+cosine,2,mobilenet,107,15,0.6552,0.6207,0.4917,3,cosine LR=True
+epochs30,0,mobilenet,107,30,0.4828,0.4784,0.2917,7,epochs=30
+epochs30,1,mobilenet,107,30,0.5862,0.5302,0.4833,6,epochs=30
+epochs30,2,mobilenet,107,30,0.6897,0.5388,0.4750,6,epochs=30
+adamw,0,mobilenet,107,15,0.4483,0.3836,0.3583,3,optimizer=adamw; weight decay=0.0001
+adamw,1,mobilenet,107,15,0.6207,0.5603,0.4750,3,optimizer=adamw; weight decay=0.0001
+adamw,2,mobilenet,107,15,0.6207,0.6336,0.5000,3,optimizer=adamw; weight decay=0.0001
+smooth,0,mobilenet,107,15,0.6207,0.5474,0.4000,3,label smoothing=0.1
+smooth,1,mobilenet,107,15,0.6207,0.5819,0.4417,3,label smoothing=0.1
+smooth,2,mobilenet,107,15,0.6207,0.6121,0.4500,3,label smoothing=0.1
+dropout50,0,mobilenet,107,15,0.7241,0.5302,0.5500,3,dropout=0.5
+dropout50,1,mobilenet,107,15,0.7931,0.5905,0.4750,3,dropout=0.5
+dropout50,2,mobilenet,107,15,0.6207,0.6336,0.4833,3,dropout=0.5
+bestepoch,0,mobilenet,107,15,0.7931,0.5690,0.4250,3,best-epoch weights=True
+bestepoch,1,mobilenet,107,15,0.7586,0.5862,0.4583,3,best-epoch weights=True
+bestepoch,2,mobilenet,107,15,0.6897,0.6379,0.5083,3,best-epoch weights=True
+leafnet,0,leafnet,107,15,0.5517,0.3060,0.2833,5,network=leafnet
+leafnet,1,leafnet,107,15,0.6552,0.3621,0.4000,2,network=leafnet
+leafnet,2,leafnet,107,15,0.5517,0.3276,0.2917,2,network=leafnet
+leafnet_gap,0,leafnet,107,15,0.6552,0.3017,0.3917,2,network=leafnet; global average pooling=True
+leafnet_gap,1,leafnet,107,15,0.5862,0.3793,0.3917,2,network=leafnet; global average pooling=True
+leafnet_gap,2,leafnet,107,15,0.4483,0.3621,0.3250,2,network=leafnet; global average pooling=True
+leafnet_drop,0,leafnet,107,15,0.6552,0.4397,0.3833,2,network=leafnet; dropout=0.5
+leafnet_drop,1,leafnet,107,15,0.5172,0.3836,0.4000,2,network=leafnet; dropout=0.5
+leafnet_drop,2,leafnet,107,15,0.6552,0.3707,0.3250,2,network=leafnet; dropout=0.5
+leafnet_aug,0,leafnet,107,15,0.5517,0.4957,0.4167,3,network=leafnet; crop/flip/rotation=True; ColorJitter=True
+leafnet_aug,1,leafnet,107,15,0.5862,0.4612,0.3417,3,network=leafnet; crop/flip/rotation=True; ColorJitter=True
+leafnet_aug,2,leafnet,107,15,0.5862,0.4224,0.4000,2,network=leafnet; crop/flip/rotation=True; ColorJitter=True
+plus_history,0,mobilenet,807,15,0.6897,0.6034,,24,training images=group+history
+plus_history,1,mobilenet,807,15,0.6897,0.5690,,20,training images=group+history
+plus_history,2,mobilenet,807,15,0.7241,0.5474,,20,training images=group+history
+history_only,0,mobilenet,700,15,0.5862,0.6078,,19,training images=history
+history_only,1,mobilenet,700,15,0.7241,0.6552,,17,training images=history
+history_only,2,mobilenet,700,15,0.6897,0.5474,,17,training images=history
+aug_best,0,mobilenet,107,15,0.6552,0.5216,0.5000,6,crop/flip/rotation=True; ColorJitter=True; best-epoch weights=True
+aug_best,1,mobilenet,107,15,0.7931,0.7198,0.5833,4,crop/flip/rotation=True; ColorJitter=True; best-epoch weights=True
+aug_best,2,mobilenet,107,15,0.8276,0.6767,0.5333,4,crop/flip/rotation=True; ColorJitter=True; best-epoch weights=True
+aug_long,0,mobilenet,107,30,0.7241,0.6509,0.6333,7,epochs=30; crop/flip/rotation=True; ColorJitter=True
+aug_long,1,mobilenet,107,30,0.7586,0.7155,0.5000,7,epochs=30; crop/flip/rotation=True; ColorJitter=True
+aug_long,2,mobilenet,107,30,0.6552,0.6638,0.5333,7,epochs=30; crop/flip/rotation=True; ColorJitter=True
+aug_cos_long,0,mobilenet,107,30,0.6897,0.7069,0.6500,7,epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+aug_cos_long,1,mobilenet,107,30,0.6552,0.7284,0.6167,7,epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+aug_cos_long,2,mobilenet,107,30,0.7931,0.7112,0.6333,7,epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+aug_data,0,mobilenet,807,15,0.7241,0.7069,,28,training images=group+history; crop/flip/rotation=True; ColorJitter=True
+aug_data,1,mobilenet,807,15,0.7241,0.6983,,27,training images=group+history; crop/flip/rotation=True; ColorJitter=True
+aug_data,2,mobilenet,807,15,0.7241,0.7284,,26,training images=group+history; crop/flip/rotation=True; ColorJitter=True
+best,0,mobilenet,807,30,0.7931,0.7672,,53,training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+best,1,mobilenet,807,30,0.7586,0.7500,,52,training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+best,2,mobilenet,807,30,0.7931,0.7888,,52,training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+best_be,0,mobilenet,807,30,0.8276,0.7328,,53,training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True; best-epoch weights=True
+best_be,1,mobilenet,807,30,0.8621,0.6379,,53,training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True; best-epoch weights=True
+best_be,2,mobilenet,807,30,0.7931,0.7284,,53,training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True; best-epoch weights=True
+best_drop,0,mobilenet,807,30,0.7931,0.7457,,52,training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; dropout=0.5; cosine LR=True
+best_drop,1,mobilenet,807,30,0.7586,0.7371,,52,training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; dropout=0.5; cosine LR=True
+best_drop,2,mobilenet,807,30,0.7241,0.7543,,53,training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; dropout=0.5; cosine LR=True
+data_long,0,mobilenet,807,30,0.7241,0.6724,,40,training images=group+history; epochs=30; cosine LR=True
+data_long,1,mobilenet,807,30,0.7241,0.5560,,40,training images=group+history; epochs=30; cosine LR=True
+data_long,2,mobilenet,807,30,0.7586,0.6164,,40,training images=group+history; epochs=30; cosine LR=True
+baseline,3,mobilenet,107,15,0.5862,0.6552,0.5000,4,
+baseline,4,mobilenet,107,15,0.5862,0.5862,0.4750,3,
+colour,3,mobilenet,107,15,0.6897,0.6595,0.5667,3,ColorJitter=True
+colour,4,mobilenet,107,15,0.6897,0.6681,0.5500,3,ColorJitter=True
+geom,3,mobilenet,107,15,0.6207,0.5302,0.5083,3,crop/flip/rotation=True
+geom,4,mobilenet,107,15,0.6207,0.6034,0.3417,3,crop/flip/rotation=True
+aug,3,mobilenet,107,15,0.6552,0.6897,0.5833,4,crop/flip/rotation=True; ColorJitter=True
+aug,4,mobilenet,107,15,0.6207,0.6638,0.5417,4,crop/flip/rotation=True; ColorJitter=True
+aug_cos_long,3,mobilenet,107,30,0.6897,0.7672,0.6500,7,epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+aug_cos_long,4,mobilenet,107,30,0.6897,0.7284,0.5833,7,epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+plus_history,3,mobilenet,807,15,0.6552,0.5172,,21,training images=group+history
+plus_history,4,mobilenet,807,15,0.7931,0.5388,,20,training images=group+history
+history_only,3,mobilenet,700,15,0.6897,0.6034,,18,training images=history
+history_only,4,mobilenet,700,15,0.6207,0.4957,,17,training images=history
+best,3,mobilenet,807,30,0.7586,0.7500,,55,training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+best,4,mobilenet,807,30,0.7586,0.7759,,55,training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True

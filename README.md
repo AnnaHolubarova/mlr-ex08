@@ -68,8 +68,49 @@ no cookies, no external QR-image service (the QR code is an SVG drawn into `inde
 * **The QR code** — `python3 -I make_qr.py AnnaHolubarova mlr-ex08` regenerates it from the Pages
   URL, so the encoded address can be re-derived, not just trusted.
 
+## Task 4 — measuring what each change brings
+
+`train/` is the measuring: the Task 3 pipeline with one switch on top, a fixed baseline, one change
+per row, the same training images, a fixed seed repeated, and every row scored on the same three
+test sets. `train/README.md` says how to run it; `train/results.csv` is one line per run.
+
+| file | what it is |
+| --- | --- |
+| `train/variants.py` | the baseline and every variant; `--summary` prints the table below |
+| `train/make_camera_val.py` | the camera-like test set: the 29 validation leaves cropped, rotated and recoloured once, with a fixed seed |
+| `train/results.csv` | 91 runs — variant, seed, the three accuracies, and what that row changed |
+| `train/grid.log` | the epoch output and the confusion matrices behind those rows |
+| `train/export_best.py` | exports the chosen variant to ONNX the way task 2e did, and checks it against PyTorch |
+| `leaf_model_best.onnx`, `model_info_best.json` | the chosen variant, for the course camera app |
+
+The baseline is the model this page runs. Mean over 3–5 seeds:
+
+| variant | camera-like (232) | last year's photos (120) |
+| --- | --- | --- |
+| baseline — the model on this page | 0.566 ±0.111 | 0.478 ±0.074 |
+| + ColorJitter (colour) | 0.652 ±0.048 | 0.535 ±0.051 |
+| + cropping, flipping, rotation | 0.562 ±0.060 | 0.447 ±0.065 |
+| + both (= augmentation) | 0.680 ±0.034 | 0.592 ±0.037 |
+| + cosine learning rate and 30 epochs | 0.728 ±0.024 | 0.627 ±0.028 |
+| + last year's 700 photographs → `leaf_model_best.onnx` | 0.766 ±0.017 | — trained on them |
+
+What did **not** help on the camera-like set, all inside the spread of the baseline: AdamW with
+weight decay 0.526, training 30 epochs instead of 15 without augmentation 0.516, label smoothing
+0.580, dropout 0.2 → 0.5 0.585, keeping the best epoch's weights 0.598. Freezing the pretrained
+backbone looked fine on the camera-like set (0.644) but fell to 0.422 on last year's photographs.
+In the small from-scratch network of Task 3, global average pooling (0.348) and dropout (0.398)
+moved it only a little over its 0.332, and augmentation brought 0.460 — still far below the
+pretrained network. Choosing the epoch on the 29-image validation set raised that set to 0.828 while
+the camera-like number went *down* to 0.700: it optimised the wrong number.
+
+The export was checked the way task 2f was: PyTorch and the exported file differ by 1.2e-06 on the
+same photographs, and the page pipeline of this repository, run on a local copy with this model,
+reproduced its probabilities to 0.00007 and classified the fake camera stream in 6.5 ms a frame.
+The deployed page deliberately keeps `leaf_model.onnx`, the model task 2f was verified with.
+
 ## Course context
 
-Machine Learning in Research (MLR), exercise 8, task 2f: a model trained and exported in the course
-notebook, put on a phone camera by a coding agent, and then checked by hand. `REVIEW.md` in this
-repository is the student's own write-up of those checks.
+Machine Learning in Research (MLR), exercise 8. Task 2f: a model trained and exported in the course
+notebook, put on a phone camera by a coding agent, and then checked by hand — `REVIEW.md` is the
+student's own write-up of those checks. Task 4: improving that model one change at a time —
+`REPORT.md` is the student's own reading of the numbers above.

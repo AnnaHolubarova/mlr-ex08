@@ -1,0 +1,2980 @@
+
+=== baseline: baseline on mps
+  epoch  1  loss 0.9904
+  epoch  2  loss 0.2005
+  epoch  3  loss 0.0507
+  epoch  4  loss 0.0583
+  epoch  5  loss 0.0083
+  epoch  6  loss 0.0264
+  epoch  7  loss 0.0209
+  epoch  8  loss 0.0195
+  epoch  9  loss 0.0467
+  epoch 10  loss 0.0066
+  epoch 11  loss 0.0042
+  epoch 12  loss 0.0083
+  epoch 13  loss 0.0012
+  epoch 14  loss 0.0534
+  epoch 15  loss 0.0080
+  baseline seed 0: train 107  val 0.448 (29)  camera-like 0.375 (232)  last year 0.358 (120)  [4s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       1      62       1       0
+  cherry       1      63       0       0
+  chestn       0      24       8       0
+   maple       2      47       8      15
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       7      17       6       0
+  cherry       5      23       0       2
+  chestn       1      16       7       6
+   maple       4      16       4       6
+  epoch  1  loss 1.0851
+  epoch  2  loss 0.2260
+  epoch  3  loss 0.1095
+  epoch  4  loss 0.0170
+  epoch  5  loss 0.0279
+  epoch  6  loss 0.0108
+  epoch  7  loss 0.0702
+  epoch  8  loss 0.0147
+  epoch  9  loss 0.0835
+  epoch 10  loss 0.0088
+  epoch 11  loss 0.0345
+  epoch 12  loss 0.0052
+  epoch 13  loss 0.0249
+  epoch 14  loss 0.0077
+  epoch 15  loss 0.0157
+  baseline seed 1: train 107  val 0.621 (29)  camera-like 0.586 (232)  last year 0.500 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       1      58       5       0
+  cherry       0      62       2       0
+  chestn       1      15      15       1
+   maple       0       8       6      58
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       2      23       5       0
+  cherry       1      23       1       5
+  chestn       0       5      11      14
+   maple       1       1       4      24
+  epoch  1  loss 1.0636
+  epoch  2  loss 0.2153
+  epoch  3  loss 0.0787
+  epoch  4  loss 0.0303
+  epoch  5  loss 0.0229
+  epoch  6  loss 0.0184
+  epoch  7  loss 0.0044
+  epoch  8  loss 0.0013
+  epoch  9  loss 0.1071
+  epoch 10  loss 0.0332
+  epoch 11  loss 0.0148
+  epoch 12  loss 0.0124
+  epoch 13  loss 0.0081
+  epoch 14  loss 0.0019
+  epoch 15  loss 0.0028
+  baseline seed 2: train 107  val 0.621 (29)  camera-like 0.629 (232)  last year 0.558 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      15      47       2       0
+  cherry       7      56       1       0
+  chestn       2      17       9       4
+   maple       0       6       0      66
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      18       8       1       3
+  cherry       5      20       0       5
+  chestn       1       4       4      21
+   maple       0       5       0      25
+
+=== colour: ColorJitter=True on mps
+  epoch  1  loss 1.0112
+  epoch  2  loss 0.4112
+  epoch  3  loss 0.2549
+  epoch  4  loss 0.1558
+  epoch  5  loss 0.0475
+  epoch  6  loss 0.0785
+  epoch  7  loss 0.1626
+  epoch  8  loss 0.0406
+  epoch  9  loss 0.0836
+  epoch 10  loss 0.0389
+  epoch 11  loss 0.0196
+  epoch 12  loss 0.0091
+  epoch 13  loss 0.0653
+  epoch 14  loss 0.0395
+  epoch 15  loss 0.0695
+  colour seed 0: train 107  val 0.690 (29)  camera-like 0.569 (232)  last year 0.467 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      18      42       0       4
+  cherry      23      39       0       2
+  chestn       3      16      13       0
+   maple       7       2       1      62
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       7      15       1       7
+  cherry       9      12       0       9
+  chestn       0       5      12      13
+   maple       2       3       0      25
+  epoch  1  loss 1.2438
+  epoch  2  loss 0.4036
+  epoch  3  loss 0.2565
+  epoch  4  loss 0.1351
+  epoch  5  loss 0.0410
+  epoch  6  loss 0.1767
+  epoch  7  loss 0.0941
+  epoch  8  loss 0.0397
+  epoch  9  loss 0.0372
+  epoch 10  loss 0.1186
+  epoch 11  loss 0.0167
+  epoch 12  loss 0.0289
+  epoch 13  loss 0.1964
+  epoch 14  loss 0.0036
+  epoch 15  loss 0.0355
+  colour seed 1: train 107  val 0.655 (29)  camera-like 0.690 (232)  last year 0.592 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      30      26       2       6
+  cherry      19      41       0       4
+  chestn       4      10      17       1
+   maple       0       0       0      72
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      14       7       4       5
+  cherry       7      12       0      11
+  chestn       0       2      16      12
+   maple       1       0       0      29
+  epoch  1  loss 1.1985
+  epoch  2  loss 0.3872
+  epoch  3  loss 0.2532
+  epoch  4  loss 0.1564
+  epoch  5  loss 0.0834
+  epoch  6  loss 0.0270
+  epoch  7  loss 0.0506
+  epoch  8  loss 0.0147
+  epoch  9  loss 0.0839
+  epoch 10  loss 0.0350
+  epoch 11  loss 0.0498
+  epoch 12  loss 0.0340
+  epoch 13  loss 0.0778
+  epoch 14  loss 0.0787
+  epoch 15  loss 0.0521
+  colour seed 2: train 107  val 0.724 (29)  camera-like 0.672 (232)  last year 0.500 (120)  [4s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      19      37       5       3
+  cherry      10      50       2       2
+  chestn       8       5      17       2
+   maple       2       0       0      70
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      12      10       2       6
+  cherry       7      10       0      13
+  chestn       0       3      13      14
+   maple       2       2       1      25
+
+=== geom: crop/flip/rotation=True on mps
+  epoch  1  loss 1.0321
+  epoch  2  loss 0.6246
+  epoch  3  loss 0.3845
+  epoch  4  loss 0.2976
+  epoch  5  loss 0.2938
+  epoch  6  loss 0.1967
+  epoch  7  loss 0.2682
+  epoch  8  loss 0.1973
+  epoch  9  loss 0.3640
+  epoch 10  loss 0.1262
+  epoch 11  loss 0.1992
+  epoch 12  loss 0.1083
+  epoch 13  loss 0.2027
+  epoch 14  loss 0.2246
+  epoch 15  loss 0.1121
+  geom seed 0: train 107  val 0.621 (29)  camera-like 0.504 (232)  last year 0.442 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       6      54       2       2
+  cherry      11      50       3       0
+  chestn       4      19       8       1
+   maple       5       4      10      53
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      13      10       3       4
+  cherry       8      11       0      11
+  chestn       6       6       1      17
+   maple       2       0       0      28
+  epoch  1  loss 1.1947
+  epoch  2  loss 0.6290
+  epoch  3  loss 0.4259
+  epoch  4  loss 0.2738
+  epoch  5  loss 0.2557
+  epoch  6  loss 0.2923
+  epoch  7  loss 0.1214
+  epoch  8  loss 0.2342
+  epoch  9  loss 0.0974
+  epoch 10  loss 0.1349
+  epoch 11  loss 0.1274
+  epoch 12  loss 0.1122
+  epoch 13  loss 0.2108
+  epoch 14  loss 0.0898
+  epoch 15  loss 0.0567
+  geom seed 1: train 107  val 0.586 (29)  camera-like 0.647 (232)  last year 0.450 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      14      49       0       1
+  cherry       3      60       0       1
+  chestn       2      15      13       2
+   maple       0       7       2      63
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      10      16       0       4
+  cherry       3      18       0       9
+  chestn       6      10       1      13
+   maple       3       2       0      25
+  epoch  1  loss 1.2121
+  epoch  2  loss 0.6010
+  epoch  3  loss 0.2895
+  epoch  4  loss 0.2868
+  epoch  5  loss 0.1778
+  epoch  6  loss 0.2022
+  epoch  7  loss 0.2386
+  epoch  8  loss 0.2737
+  epoch  9  loss 0.0697
+  epoch 10  loss 0.1815
+  epoch 11  loss 0.0428
+  epoch 12  loss 0.1709
+  epoch 13  loss 0.1811
+  epoch 14  loss 0.1238
+  epoch 15  loss 0.1646
+  geom seed 2: train 107  val 0.724 (29)  camera-like 0.526 (232)  last year 0.492 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      10      52       2       0
+  cherry      13      48       3       0
+  chestn       3      17      12       0
+   maple      11       9       0      52
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      12      14       2       2
+  cherry      13      14       0       3
+  chestn       6       3       5      16
+   maple       2       0       0      28
+
+=== aug: crop/flip/rotation=True; ColorJitter=True on mps
+  epoch  1  loss 1.0673
+  epoch  2  loss 0.6444
+  epoch  3  loss 0.4608
+  epoch  4  loss 0.3752
+  epoch  5  loss 0.3190
+  epoch  6  loss 0.4392
+  epoch  7  loss 0.2468
+  epoch  8  loss 0.2219
+  epoch  9  loss 0.3768
+  epoch 10  loss 0.2415
+  epoch 11  loss 0.1951
+  epoch 12  loss 0.2621
+  epoch 13  loss 0.2308
+  epoch 14  loss 0.2588
+  epoch 15  loss 0.2107
+  aug seed 0: train 107  val 0.655 (29)  camera-like 0.634 (232)  last year 0.608 (120)  [4s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      28      35       1       0
+  cherry      17      45       1       1
+  chestn       6      10      16       0
+   maple       5       4       5      58
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      18      11       1       0
+  cherry       8      18       0       4
+  chestn       1       3      20       6
+   maple       6       2       5      17
+  epoch  1  loss 1.2134
+  epoch  2  loss 0.7582
+  epoch  3  loss 0.4599
+  epoch  4  loss 0.3035
+  epoch  5  loss 0.2469
+  epoch  6  loss 0.3847
+  epoch  7  loss 0.3133
+  epoch  8  loss 0.2258
+  epoch  9  loss 0.2894
+  epoch 10  loss 0.1541
+  epoch 11  loss 0.2348
+  epoch 12  loss 0.2954
+  epoch 13  loss 0.2467
+  epoch 14  loss 0.2434
+  epoch 15  loss 0.1350
+  aug seed 1: train 107  val 0.621 (29)  camera-like 0.690 (232)  last year 0.583 (120)  [4s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      16      46       2       0
+  cherry      13      50       1       0
+  chestn       0       5      27       0
+   maple       2       2       1      67
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      11      15       4       0
+  cherry       8      18       2       2
+  chestn       0       2      28       0
+   maple       2       6       9      13
+  epoch  1  loss 1.3073
+  epoch  2  loss 0.7184
+  epoch  3  loss 0.5274
+  epoch  4  loss 0.3360
+  epoch  5  loss 0.2963
+  epoch  6  loss 0.2106
+  epoch  7  loss 0.2902
+  epoch  8  loss 0.3432
+  epoch  9  loss 0.3691
+  epoch 10  loss 0.3264
+  epoch 11  loss 0.2437
+  epoch 12  loss 0.2850
+  epoch 13  loss 0.3059
+  epoch 14  loss 0.2142
+  epoch 15  loss 0.1821
+  aug seed 2: train 107  val 0.828 (29)  camera-like 0.724 (232)  last year 0.642 (120)  [4s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      48      15       1       0
+  cherry      33      30       0       1
+  chestn       6       6      20       0
+   maple       1       0       1      70
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      25       3       1       1
+  cherry      17       7       0       6
+  chestn       8       0      17       5
+   maple       2       0       0      28
+
+=== frozen: frozen backbone=True on mps
+  epoch  1  loss 1.2864
+  epoch  2  loss 1.0084
+  epoch  3  loss 0.7301
+  epoch  4  loss 0.5673
+  epoch  5  loss 0.5058
+  epoch  6  loss 0.3748
+  epoch  7  loss 0.3390
+  epoch  8  loss 0.3667
+  epoch  9  loss 0.2995
+  epoch 10  loss 0.2309
+  epoch 11  loss 0.2979
+  epoch 12  loss 0.1782
+  epoch 13  loss 0.2040
+  epoch 14  loss 0.2492
+  epoch 15  loss 0.1593
+  frozen seed 0: train 107  val 0.586 (29)  camera-like 0.608 (232)  last year 0.400 (120)  [1s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      34      21       3       6
+  cherry      25      36       1       2
+  chestn       5      14       9       4
+   maple       6       0       4      62
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      17       5       6       2
+  cherry      16       9       0       5
+  chestn       8       4       4      14
+   maple      11       1       0      18
+  epoch  1  loss 1.2682
+  epoch  2  loss 0.9023
+  epoch  3  loss 0.7682
+  epoch  4  loss 0.5375
+  epoch  5  loss 0.5475
+  epoch  6  loss 0.3817
+  epoch  7  loss 0.3608
+  epoch  8  loss 0.2805
+  epoch  9  loss 0.2946
+  epoch 10  loss 0.2377
+  epoch 11  loss 0.3087
+  epoch 12  loss 0.1881
+  epoch 13  loss 0.2397
+  epoch 14  loss 0.1798
+  epoch 15  loss 0.1721
+  frozen seed 1: train 107  val 0.621 (29)  camera-like 0.668 (232)  last year 0.425 (120)  [1s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      27      28       2       7
+  cherry      12      43       6       3
+  chestn       2      10      18       2
+   maple       3       0       2      67
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      16       6       4       4
+  cherry      14       8       0       8
+  chestn       3       3       6      18
+   maple       8       0       1      21
+  epoch  1  loss 1.2798
+  epoch  2  loss 0.9150
+  epoch  3  loss 0.7480
+  epoch  4  loss 0.5295
+  epoch  5  loss 0.5359
+  epoch  6  loss 0.4083
+  epoch  7  loss 0.3491
+  epoch  8  loss 0.2997
+  epoch  9  loss 0.3166
+  epoch 10  loss 0.2934
+  epoch 11  loss 0.1915
+  epoch 12  loss 0.1765
+  epoch 13  loss 0.1850
+  epoch 14  loss 0.1729
+  epoch 15  loss 0.1559
+  frozen seed 2: train 107  val 0.655 (29)  camera-like 0.655 (232)  last year 0.442 (120)  [1s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      21      33       4       6
+  cherry      10      47       1       6
+  chestn       0      12      17       3
+   maple       4       1       0      67
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      13       9       4       4
+  cherry       6       9       1      14
+  chestn       3       4       4      19
+   maple       2       1       0      27
+
+=== cosine: cosine LR=True on mps
+  epoch  1  loss 0.9904
+  epoch  2  loss 0.2007
+  epoch  3  loss 0.0513
+  epoch  4  loss 0.0577
+  epoch  5  loss 0.0087
+  epoch  6  loss 0.0251
+  epoch  7  loss 0.0168
+  epoch  8  loss 0.0123
+  epoch  9  loss 0.0313
+  epoch 10  loss 0.0019
+  epoch 11  loss 0.0916
+  epoch 12  loss 0.0012
+  epoch 13  loss 0.0012
+  epoch 14  loss 0.0329
+  epoch 15  loss 0.0022
+  cosine seed 0: train 107  val 0.621 (29)  camera-like 0.534 (232)  last year 0.450 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       4      56       4       0
+  cherry       3      60       1       0
+  chestn       6      17       8       1
+   maple       4      12       4      52
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      14       8       7       1
+  cherry       9      15       0       6
+  chestn       2      10       6      12
+   maple       4       5       2      19
+  epoch  1  loss 1.0851
+  epoch  2  loss 0.2261
+  epoch  3  loss 0.1111
+  epoch  4  loss 0.0181
+  epoch  5  loss 0.0292
+  epoch  6  loss 0.0124
+  epoch  7  loss 0.0386
+  epoch  8  loss 0.0090
+  epoch  9  loss 0.0330
+  epoch 10  loss 0.0119
+  epoch 11  loss 0.0106
+  epoch 12  loss 0.0648
+  epoch 13  loss 0.0052
+  epoch 14  loss 0.0067
+  epoch 15  loss 0.0055
+  cosine seed 1: train 107  val 0.655 (29)  camera-like 0.625 (232)  last year 0.433 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      12      50       1       1
+  cherry      10      53       0       1
+  chestn       4      19       8       1
+   maple       0       0       0      72
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      11      16       2       1
+  cherry       8      16       0       6
+  chestn       6       8       1      15
+   maple       3       2       1      24
+  epoch  1  loss 1.0636
+  epoch  2  loss 0.2156
+  epoch  3  loss 0.0793
+  epoch  4  loss 0.0311
+  epoch  5  loss 0.0243
+  epoch  6  loss 0.0180
+  epoch  7  loss 0.0050
+  epoch  8  loss 0.0019
+  epoch  9  loss 0.0772
+  epoch 10  loss 0.0198
+  epoch 11  loss 0.0042
+  epoch 12  loss 0.0028
+  epoch 13  loss 0.0016
+  epoch 14  loss 0.0015
+  epoch 15  loss 0.0020
+  cosine seed 2: train 107  val 0.655 (29)  camera-like 0.621 (232)  last year 0.492 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       7      57       0       0
+  cherry       6      57       0       1
+  chestn       1      15       9       7
+   maple       1       0       0      71
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       7      20       1       2
+  cherry       2      22       0       6
+  chestn       0       9       5      16
+   maple       1       4       0      25
+
+=== epochs30: epochs=30 on mps
+  epoch  1  loss 0.9904
+  epoch  2  loss 0.2005
+  epoch  3  loss 0.0507
+  epoch  4  loss 0.0583
+  epoch  5  loss 0.0083
+  epoch  6  loss 0.0264
+  epoch  7  loss 0.0209
+  epoch  8  loss 0.0195
+  epoch  9  loss 0.0467
+  epoch 10  loss 0.0066
+  epoch 11  loss 0.0042
+  epoch 12  loss 0.0083
+  epoch 13  loss 0.0012
+  epoch 14  loss 0.0534
+  epoch 15  loss 0.0080
+  epoch 16  loss 0.0085
+  epoch 17  loss 0.0296
+  epoch 18  loss 0.0366
+  epoch 19  loss 0.0335
+  epoch 20  loss 0.0746
+  epoch 21  loss 0.0516
+  epoch 22  loss 0.0704
+  epoch 23  loss 0.0031
+  epoch 24  loss 0.1497
+  epoch 25  loss 0.0116
+  epoch 26  loss 0.2998
+  epoch 27  loss 0.0553
+  epoch 28  loss 0.1760
+  epoch 29  loss 0.1023
+  epoch 30  loss 0.0836
+  epochs30 seed 0: train 107  val 0.483 (29)  camera-like 0.478 (232)  last year 0.292 (120)  [7s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      19       7       2      36
+  cherry      10      19       0      35
+  chestn       5      11       2      14
+   maple       0       1       0      71
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       4       1       3      22
+  cherry       5       0       0      25
+  chestn       0       1       1      28
+   maple       0       0       0      30
+  epoch  1  loss 1.0851
+  epoch  2  loss 0.2260
+  epoch  3  loss 0.1095
+  epoch  4  loss 0.0170
+  epoch  5  loss 0.0279
+  epoch  6  loss 0.0108
+  epoch  7  loss 0.0702
+  epoch  8  loss 0.0147
+  epoch  9  loss 0.0835
+  epoch 10  loss 0.0088
+  epoch 11  loss 0.0345
+  epoch 12  loss 0.0052
+  epoch 13  loss 0.0249
+  epoch 14  loss 0.0077
+  epoch 15  loss 0.0157
+  epoch 16  loss 0.0076
+  epoch 17  loss 0.0213
+  epoch 18  loss 0.0037
+  epoch 19  loss 0.0328
+  epoch 20  loss 0.0043
+  epoch 21  loss 0.0014
+  epoch 22  loss 0.2451
+  epoch 23  loss 0.0776
+  epoch 24  loss 0.0125
+  epoch 25  loss 0.1404
+  epoch 26  loss 0.0220
+  epoch 27  loss 0.0430
+  epoch 28  loss 0.0240
+  epoch 29  loss 0.0266
+  epoch 30  loss 0.1071
+  epochs30 seed 1: train 107  val 0.586 (29)  camera-like 0.530 (232)  last year 0.483 (120)  [6s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      28      36       0       0
+  cherry      30      34       0       0
+  chestn      13      11       5       3
+   maple      14       2       0      56
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      20       7       2       1
+  cherry      16      12       0       2
+  chestn      11       3       5      11
+   maple       7       1       1      21
+  epoch  1  loss 1.0636
+  epoch  2  loss 0.2153
+  epoch  3  loss 0.0787
+  epoch  4  loss 0.0303
+  epoch  5  loss 0.0229
+  epoch  6  loss 0.0184
+  epoch  7  loss 0.0044
+  epoch  8  loss 0.0013
+  epoch  9  loss 0.1071
+  epoch 10  loss 0.0332
+  epoch 11  loss 0.0148
+  epoch 12  loss 0.0124
+  epoch 13  loss 0.0081
+  epoch 14  loss 0.0019
+  epoch 15  loss 0.0028
+  epoch 16  loss 0.0017
+  epoch 17  loss 0.0011
+  epoch 18  loss 0.0004
+  epoch 19  loss 0.0621
+  epoch 20  loss 0.0933
+  epoch 21  loss 0.1724
+  epoch 22  loss 0.3738
+  epoch 23  loss 0.0975
+  epoch 24  loss 0.0168
+  epoch 25  loss 0.0582
+  epoch 26  loss 0.1252
+  epoch 27  loss 0.0058
+  epoch 28  loss 0.0072
+  epoch 29  loss 0.0091
+  epoch 30  loss 0.0210
+  epochs30 seed 2: train 107  val 0.690 (29)  camera-like 0.539 (232)  last year 0.475 (120)  [6s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      28      30       1       5
+  cherry      27      34       0       3
+  chestn       5       9       8      10
+   maple       6      11       0      55
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      18       6       3       3
+  cherry      16       9       2       3
+  chestn       4       6       6      14
+   maple       3       3       0      24
+
+=== adamw: optimizer=adamw; weight decay=0.0001 on mps
+  epoch  1  loss 0.9904
+  epoch  2  loss 0.2005
+  epoch  3  loss 0.0506
+  epoch  4  loss 0.0577
+  epoch  5  loss 0.0079
+  epoch  6  loss 0.0271
+  epoch  7  loss 0.0193
+  epoch  8  loss 0.0188
+  epoch  9  loss 0.0469
+  epoch 10  loss 0.0083
+  epoch 11  loss 0.0048
+  epoch 12  loss 0.0071
+  epoch 13  loss 0.0018
+  epoch 14  loss 0.0678
+  epoch 15  loss 0.0041
+  adamw seed 0: train 107  val 0.448 (29)  camera-like 0.384 (232)  last year 0.358 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       1      62       1       0
+  cherry       1      63       0       0
+  chestn       0      25       7       0
+   maple       1      46       7      18
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       6      18       6       0
+  cherry       4      25       0       1
+  chestn       0      20       5       5
+   maple       3      19       1       7
+  epoch  1  loss 1.0850
+  epoch  2  loss 0.2261
+  epoch  3  loss 0.1124
+  epoch  4  loss 0.0168
+  epoch  5  loss 0.0286
+  epoch  6  loss 0.0110
+  epoch  7  loss 0.0802
+  epoch  8  loss 0.0141
+  epoch  9  loss 0.1005
+  epoch 10  loss 0.0111
+  epoch 11  loss 0.0354
+  epoch 12  loss 0.0053
+  epoch 13  loss 0.0118
+  epoch 14  loss 0.0065
+  epoch 15  loss 0.0089
+  adamw seed 1: train 107  val 0.621 (29)  camera-like 0.560 (232)  last year 0.475 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       1      58       5       0
+  cherry       1      61       2       0
+  chestn       2      16      13       1
+   maple       0      14       3      55
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       4      22       4       0
+  cherry       2      21       2       5
+  chestn       0       6       7      17
+   maple       1       1       3      25
+  epoch  1  loss 1.0636
+  epoch  2  loss 0.2159
+  epoch  3  loss 0.0789
+  epoch  4  loss 0.0308
+  epoch  5  loss 0.0248
+  epoch  6  loss 0.0189
+  epoch  7  loss 0.0051
+  epoch  8  loss 0.0015
+  epoch  9  loss 0.1126
+  epoch 10  loss 0.0253
+  epoch 11  loss 0.0184
+  epoch 12  loss 0.0140
+  epoch 13  loss 0.0167
+  epoch 14  loss 0.0012
+  epoch 15  loss 0.0088
+  adamw seed 2: train 107  val 0.621 (29)  camera-like 0.634 (232)  last year 0.500 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      16      45       3       0
+  cherry       9      54       0       1
+  chestn       2      17       9       4
+   maple       0       4       0      68
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      17       9       2       2
+  cherry      10      13       0       7
+  chestn       1       5       4      20
+   maple       0       4       0      26
+
+=== smooth: label smoothing=0.1 on mps
+  epoch  1  loss 1.0680
+  epoch  2  loss 0.4985
+  epoch  3  loss 0.4353
+  epoch  4  loss 0.4353
+  epoch  5  loss 0.4136
+  epoch  6  loss 0.4079
+  epoch  7  loss 0.4044
+  epoch  8  loss 0.3935
+  epoch  9  loss 0.4125
+  epoch 10  loss 0.3948
+  epoch 11  loss 0.3906
+  epoch 12  loss 0.3772
+  epoch 13  loss 0.3736
+  epoch 14  loss 0.4043
+  epoch 15  loss 0.3713
+  smooth seed 0: train 107  val 0.621 (29)  camera-like 0.547 (232)  last year 0.400 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       7      54       2       1
+  cherry      12      52       0       0
+  chestn       3      18      10       1
+   maple       3       6       5      58
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       4      16       8       2
+  cherry       2      17       3       8
+  chestn       0       7      11      12
+   maple       0       8       6      16
+  epoch  1  loss 1.1511
+  epoch  2  loss 0.5318
+  epoch  3  loss 0.4859
+  epoch  4  loss 0.4186
+  epoch  5  loss 0.4127
+  epoch  6  loss 0.4050
+  epoch  7  loss 0.3900
+  epoch  8  loss 0.4040
+  epoch  9  loss 0.4163
+  epoch 10  loss 0.3821
+  epoch 11  loss 0.4017
+  epoch 12  loss 0.3842
+  epoch 13  loss 0.4007
+  epoch 14  loss 0.3782
+  epoch 15  loss 0.3786
+  smooth seed 1: train 107  val 0.621 (29)  camera-like 0.582 (232)  last year 0.442 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       4      57       1       2
+  cherry       4      58       1       1
+  chestn       2      19      11       0
+   maple       1       3       6      62
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       6      16       7       1
+  cherry       6      15       0       9
+  chestn       2       5      10      13
+   maple       2       2       4      22
+  epoch  1  loss 1.1247
+  epoch  2  loss 0.5144
+  epoch  3  loss 0.4441
+  epoch  4  loss 0.4284
+  epoch  5  loss 0.4144
+  epoch  6  loss 0.4144
+  epoch  7  loss 0.4049
+  epoch  8  loss 0.3891
+  epoch  9  loss 0.4177
+  epoch 10  loss 0.4150
+  epoch 11  loss 0.4049
+  epoch 12  loss 0.3838
+  epoch 13  loss 0.4068
+  epoch 14  loss 0.3812
+  epoch 15  loss 0.3808
+  smooth seed 2: train 107  val 0.621 (29)  camera-like 0.612 (232)  last year 0.450 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      10      51       0       3
+  cherry       3      57       0       4
+  chestn       1      20       4       7
+   maple       1       0       0      71
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       9      14       0       7
+  cherry       2      17       0      11
+  chestn       1       4       1      24
+   maple       0       3       0      27
+
+=== dropout50: dropout=0.5 on mps
+  epoch  1  loss 1.0654
+  epoch  2  loss 0.3338
+  epoch  3  loss 0.1105
+  epoch  4  loss 0.0578
+  epoch  5  loss 0.0282
+  epoch  6  loss 0.0202
+  epoch  7  loss 0.0128
+  epoch  8  loss 0.0256
+  epoch  9  loss 0.0135
+  epoch 10  loss 0.0095
+  epoch 11  loss 0.0200
+  epoch 12  loss 0.0030
+  epoch 13  loss 0.0019
+  epoch 14  loss 0.0687
+  epoch 15  loss 0.0072
+  dropout50 seed 0: train 107  val 0.724 (29)  camera-like 0.530 (232)  last year 0.550 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      26      33       1       4
+  cherry      27      34       2       1
+  chestn       8      12       8       4
+   maple       6       3       8      55
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      23       1       5       1
+  cherry      11      11       0       8
+  chestn       2      10       6      12
+   maple       0       4       0      26
+  epoch  1  loss 1.0687
+  epoch  2  loss 0.3370
+  epoch  3  loss 0.2123
+  epoch  4  loss 0.0532
+  epoch  5  loss 0.0577
+  epoch  6  loss 0.0399
+  epoch  7  loss 0.0162
+  epoch  8  loss 0.0208
+  epoch  9  loss 0.0199
+  epoch 10  loss 0.0060
+  epoch 11  loss 0.0143
+  epoch 12  loss 0.0030
+  epoch 13  loss 0.0237
+  epoch 14  loss 0.0428
+  epoch 15  loss 0.0051
+  dropout50 seed 1: train 107  val 0.793 (29)  camera-like 0.591 (232)  last year 0.475 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      10      52       2       0
+  cherry       9      55       0       0
+  chestn       3      16       9       4
+   maple       0       8       1      63
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      10      15       4       1
+  cherry       5      19       0       6
+  chestn       2       8       3      17
+   maple       0       4       1      25
+  epoch  1  loss 1.1571
+  epoch  2  loss 0.3085
+  epoch  3  loss 0.1428
+  epoch  4  loss 0.0684
+  epoch  5  loss 0.0395
+  epoch  6  loss 0.0254
+  epoch  7  loss 0.0134
+  epoch  8  loss 0.0025
+  epoch  9  loss 0.0091
+  epoch 10  loss 0.0047
+  epoch 11  loss 0.0026
+  epoch 12  loss 0.0013
+  epoch 13  loss 0.0021
+  epoch 14  loss 0.0011
+  epoch 15  loss 0.0009
+  dropout50 seed 2: train 107  val 0.621 (29)  camera-like 0.634 (232)  last year 0.483 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      18      46       0       0
+  cherry       8      56       0       0
+  chestn       5      14      10       3
+   maple       0       9       0      63
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       3      25       1       1
+  cherry       2      22       0       6
+  chestn       0       5       7      18
+   maple       0       4       0      26
+
+=== bestepoch: best-epoch weights=True on mps
+  epoch  1  loss 0.9904  val 0.586  best so far 0.586
+  epoch  2  loss 0.2467  val 0.655  best so far 0.655
+  epoch  3  loss 0.0788  val 0.655  best so far 0.655
+  epoch  4  loss 0.1361  val 0.690  best so far 0.690
+  epoch  5  loss 0.0108  val 0.690  best so far 0.690
+  epoch  6  loss 0.0308  val 0.655  best so far 0.690
+  epoch  7  loss 0.0106  val 0.759  best so far 0.759
+  epoch  8  loss 0.0025  val 0.793  best so far 0.793
+  epoch  9  loss 0.0169  val 0.759  best so far 0.793
+  epoch 10  loss 0.0022  val 0.793  best so far 0.793
+  epoch 11  loss 0.0030  val 0.759  best so far 0.793
+  epoch 12  loss 0.0027  val 0.724  best so far 0.793
+  epoch 13  loss 0.0006  val 0.724  best so far 0.793
+  epoch 14  loss 0.0389  val 0.655  best so far 0.793
+  epoch 15  loss 0.0152  val 0.655  best so far 0.793
+  bestepoch seed 0: train 107  val 0.793 (29)  camera-like 0.569 (232)  last year 0.425 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      27      37       0       0
+  cherry      20      44       0       0
+  chestn       7      17       8       0
+   maple       6      11       2      53
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      25       2       3       0
+  cherry      18       9       0       3
+  chestn       7      11       5       7
+   maple       9       7       2      12
+  epoch  1  loss 1.0851  val 0.724  best so far 0.724
+  epoch  2  loss 0.2517  val 0.759  best so far 0.759
+  epoch  3  loss 0.0762  val 0.724  best so far 0.759
+  epoch  4  loss 0.0306  val 0.724  best so far 0.759
+  epoch  5  loss 0.0169  val 0.724  best so far 0.759
+  epoch  6  loss 0.0059  val 0.690  best so far 0.759
+  epoch  7  loss 0.0024  val 0.690  best so far 0.759
+  epoch  8  loss 0.0031  val 0.690  best so far 0.759
+  epoch  9  loss 0.0024  val 0.690  best so far 0.759
+  epoch 10  loss 0.0006  val 0.690  best so far 0.759
+  epoch 11  loss 0.0053  val 0.690  best so far 0.759
+  epoch 12  loss 0.0250  val 0.655  best so far 0.759
+  epoch 13  loss 0.0115  val 0.655  best so far 0.759
+  epoch 14  loss 0.0521  val 0.517  best so far 0.759
+  epoch 15  loss 0.3046  val 0.552  best so far 0.759
+  bestepoch seed 1: train 107  val 0.759 (29)  camera-like 0.586 (232)  last year 0.458 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       1      60       1       2
+  cherry       1      60       0       3
+  chestn       0      25       6       1
+   maple       0       3       0      69
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       5      21       2       2
+  cherry       0      21       0       9
+  chestn       2       5       3      20
+   maple       1       2       1      26
+  epoch  1  loss 1.0636  val 0.621  best so far 0.621
+  epoch  2  loss 0.3218  val 0.621  best so far 0.621
+  epoch  3  loss 0.0799  val 0.655  best so far 0.655
+  epoch  4  loss 0.0426  val 0.621  best so far 0.655
+  epoch  5  loss 0.0198  val 0.621  best so far 0.655
+  epoch  6  loss 0.0036  val 0.655  best so far 0.655
+  epoch  7  loss 0.0188  val 0.690  best so far 0.690
+  epoch  8  loss 0.0074  val 0.690  best so far 0.690
+  epoch  9  loss 0.0024  val 0.690  best so far 0.690
+  epoch 10  loss 0.0759  val 0.655  best so far 0.690
+  epoch 11  loss 0.0023  val 0.483  best so far 0.690
+  epoch 12  loss 0.0107  val 0.379  best so far 0.690
+  epoch 13  loss 0.0085  val 0.276  best so far 0.690
+  epoch 14  loss 0.0086  val 0.310  best so far 0.690
+  epoch 15  loss 0.0023  val 0.310  best so far 0.690
+  bestepoch seed 2: train 107  val 0.690 (29)  camera-like 0.638 (232)  last year 0.508 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      14      49       0       1
+  cherry      10      54       0       0
+  chestn       4       9      11       8
+   maple       2       1       0      69
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      17      12       0       1
+  cherry       8      16       0       6
+  chestn       3      12       6       9
+   maple       3       5       0      22
+
+=== leafnet: network=leafnet on mps
+  epoch  1  loss 1.3825
+  epoch  2  loss 1.3607
+  epoch  3  loss 1.3014
+  epoch  4  loss 1.1661
+  epoch  5  loss 1.0746
+  epoch  6  loss 0.9605
+  epoch  7  loss 0.9299
+  epoch  8  loss 0.9756
+  epoch  9  loss 0.8871
+  epoch 10  loss 0.7823
+  epoch 11  loss 0.6012
+  epoch 12  loss 0.5271
+  epoch 13  loss 0.4404
+  epoch 14  loss 0.3629
+  epoch 15  loss 0.2985
+  leafnet seed 0: train 107  val 0.552 (29)  camera-like 0.306 (232)  last year 0.283 (120)  [5s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      43      19       2       0
+  cherry      47      17       0       0
+  chestn      26       2       4       0
+   maple      28      31       6       7
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      22       6       1       1
+  cherry      18       5       2       5
+  chestn      12      15       2       1
+   maple      12      12       1       5
+  epoch  1  loss 1.3464
+  epoch  2  loss 1.3310
+  epoch  3  loss 1.2441
+  epoch  4  loss 1.1744
+  epoch  5  loss 1.0772
+  epoch  6  loss 0.8278
+  epoch  7  loss 0.7291
+  epoch  8  loss 0.6410
+  epoch  9  loss 0.6997
+  epoch 10  loss 0.5879
+  epoch 11  loss 0.6454
+  epoch 12  loss 0.5271
+  epoch 13  loss 0.4335
+  epoch 14  loss 0.4588
+  epoch 15  loss 0.3241
+  leafnet seed 1: train 107  val 0.655 (29)  camera-like 0.362 (232)  last year 0.400 (120)  [2s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      43      14       1       6
+  cherry      41      17       3       3
+  chestn      19       7       6       0
+   maple      23      19      12      18
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      20       7       0       3
+  cherry      14       7       1       8
+  chestn       4      10       0      16
+   maple       6       3       0      21
+  epoch  1  loss 1.3732
+  epoch  2  loss 1.3312
+  epoch  3  loss 1.3155
+  epoch  4  loss 1.2527
+  epoch  5  loss 1.1286
+  epoch  6  loss 1.0605
+  epoch  7  loss 0.9870
+  epoch  8  loss 0.8963
+  epoch  9  loss 0.7879
+  epoch 10  loss 0.6761
+  epoch 11  loss 0.5734
+  epoch 12  loss 0.4388
+  epoch 13  loss 0.4332
+  epoch 14  loss 0.4409
+  epoch 15  loss 0.4794
+  leafnet seed 2: train 107  val 0.552 (29)  camera-like 0.328 (232)  last year 0.292 (120)  [2s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      44      15       5       0
+  cherry      42      19       3       0
+  chestn      19       4       9       0
+   maple      24      31      13       4
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      16      13       0       1
+  cherry      17       8       4       1
+  chestn       0      25       2       3
+   maple       6      14       1       9
+
+=== leafnet_gap: network=leafnet; global average pooling=True on mps
+  epoch  1  loss 1.3797
+  epoch  2  loss 1.3616
+  epoch  3  loss 1.3507
+  epoch  4  loss 1.3690
+  epoch  5  loss 1.3480
+  epoch  6  loss 1.3159
+  epoch  7  loss 1.3285
+  epoch  8  loss 1.3055
+  epoch  9  loss 1.2598
+  epoch 10  loss 1.2369
+  epoch 11  loss 1.1686
+  epoch 12  loss 1.1519
+  epoch 13  loss 1.1175
+  epoch 14  loss 1.0824
+  epoch 15  loss 1.0778
+  leafnet_gap seed 0: train 107  val 0.655 (29)  camera-like 0.302 (232)  last year 0.392 (120)  [2s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      14       4      27      19
+  cherry       7       6      25      26
+  chestn       6       0      16      10
+   maple       8       2      28      34
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      15       3       3       9
+  cherry      13       2       3      12
+  chestn       0       0       1      29
+   maple       0       1       0      29
+  epoch  1  loss 1.3797
+  epoch  2  loss 1.3850
+  epoch  3  loss 1.3642
+  epoch  4  loss 1.3536
+  epoch  5  loss 1.3341
+  epoch  6  loss 1.3082
+  epoch  7  loss 1.3021
+  epoch  8  loss 1.2854
+  epoch  9  loss 1.2649
+  epoch 10  loss 1.2289
+  epoch 11  loss 1.2153
+  epoch 12  loss 1.1864
+  epoch 13  loss 1.1421
+  epoch 14  loss 1.1086
+  epoch 15  loss 1.0663
+  leafnet_gap seed 1: train 107  val 0.586 (29)  camera-like 0.379 (232)  last year 0.392 (120)  [2s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      34       0      13      17
+  cherry      16       0      18      30
+  chestn       4       0      15      13
+   maple       8       0      25      39
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      17       0       0      13
+  cherry      12       0       0      18
+  chestn       0       0       0      30
+   maple       0       0       0      30
+  epoch  1  loss 1.3727
+  epoch  2  loss 1.3567
+  epoch  3  loss 1.3704
+  epoch  4  loss 1.3670
+  epoch  5  loss 1.3431
+  epoch  6  loss 1.3550
+  epoch  7  loss 1.3125
+  epoch  8  loss 1.3049
+  epoch  9  loss 1.2720
+  epoch 10  loss 1.2691
+  epoch 11  loss 1.2364
+  epoch 12  loss 1.1711
+  epoch 13  loss 1.2274
+  epoch 14  loss 1.1470
+  epoch 15  loss 1.0711
+  leafnet_gap seed 2: train 107  val 0.448 (29)  camera-like 0.362 (232)  last year 0.325 (120)  [2s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      28       5       0      31
+  cherry      22       4       0      38
+  chestn      14       0       0      18
+   maple      19       0       1      52
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       3       7       0      20
+  cherry       1       6       0      23
+  chestn       0       0       0      30
+   maple       0       0       0      30
+
+=== leafnet_drop: network=leafnet; dropout=0.5 on mps
+  epoch  1  loss 1.3758
+  epoch  2  loss 1.3819
+  epoch  3  loss 1.3592
+  epoch  4  loss 1.3288
+  epoch  5  loss 1.2736
+  epoch  6  loss 1.2737
+  epoch  7  loss 1.2264
+  epoch  8  loss 1.1139
+  epoch  9  loss 1.0506
+  epoch 10  loss 1.0170
+  epoch 11  loss 0.9253
+  epoch 12  loss 0.9000
+  epoch 13  loss 0.7578
+  epoch 14  loss 0.7551
+  epoch 15  loss 0.6867
+  leafnet_drop seed 0: train 107  val 0.655 (29)  camera-like 0.440 (232)  last year 0.383 (120)  [2s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      16       6      20      22
+  cherry       8      21      22      13
+  chestn       1       2      23       6
+   maple       0       6      24      42
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      20       2       4       4
+  cherry      14       3       5       8
+  chestn       2       1       0      27
+   maple       4       2       1      23
+  epoch  1  loss 1.3517
+  epoch  2  loss 1.3678
+  epoch  3  loss 1.3270
+  epoch  4  loss 1.3359
+  epoch  5  loss 1.2153
+  epoch  6  loss 1.0853
+  epoch  7  loss 0.9459
+  epoch  8  loss 0.9244
+  epoch  9  loss 0.8610
+  epoch 10  loss 0.8967
+  epoch 11  loss 0.9827
+  epoch 12  loss 0.8110
+  epoch 13  loss 0.7086
+  epoch 14  loss 0.7156
+  epoch 15  loss 0.7726
+  leafnet_drop seed 1: train 107  val 0.517 (29)  camera-like 0.384 (232)  last year 0.400 (120)  [2s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      27      16      12       9
+  cherry      22      14      15      13
+  chestn       7       2      14       9
+   maple       3       9      26      34
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      22       2       3       3
+  cherry      19       2       3       6
+  chestn       1       2       0      27
+   maple       5       1       0      24
+  epoch  1  loss 1.3716
+  epoch  2  loss 1.3580
+  epoch  3  loss 1.3542
+  epoch  4  loss 1.3116
+  epoch  5  loss 1.2541
+  epoch  6  loss 1.2142
+  epoch  7  loss 1.1249
+  epoch  8  loss 1.0627
+  epoch  9  loss 1.0270
+  epoch 10  loss 0.8828
+  epoch 11  loss 0.8901
+  epoch 12  loss 0.8003
+  epoch 13  loss 0.8203
+  epoch 14  loss 0.6874
+  epoch 15  loss 0.7387
+  leafnet_drop seed 2: train 107  val 0.655 (29)  camera-like 0.371 (232)  last year 0.325 (120)  [2s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      20       7      29       8
+  cherry      22      11      27       4
+  chestn       6       1      23       2
+   maple       5       3      32      32
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      18       3       5       4
+  cherry      13       1      10       6
+  chestn       1       3       1      25
+   maple       7       2       2      19
+
+=== leafnet_aug: network=leafnet; crop/flip/rotation=True; ColorJitter=True on mps
+  epoch  1  loss 1.3798
+  epoch  2  loss 1.4399
+  epoch  3  loss 1.3482
+  epoch  4  loss 1.3689
+  epoch  5  loss 1.3643
+  epoch  6  loss 1.3655
+  epoch  7  loss 1.3298
+  epoch  8  loss 1.2882
+  epoch  9  loss 1.2987
+  epoch 10  loss 1.3281
+  epoch 11  loss 1.2844
+  epoch 12  loss 1.2290
+  epoch 13  loss 1.2545
+  epoch 14  loss 1.1778
+  epoch 15  loss 1.1728
+  leafnet_aug seed 0: train 107  val 0.552 (29)  camera-like 0.496 (232)  last year 0.417 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      33      18       0      13
+  cherry      23      29       0      12
+  chestn       7       8       0      17
+   maple       8      11       0      53
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      14       3       0      13
+  cherry       8       9       0      13
+  chestn       0       0       0      30
+   maple       2       1       0      27
+  epoch  1  loss 1.3698
+  epoch  2  loss 1.3344
+  epoch  3  loss 1.3090
+  epoch  4  loss 1.3097
+  epoch  5  loss 1.2139
+  epoch  6  loss 1.2667
+  epoch  7  loss 1.2117
+  epoch  8  loss 1.1405
+  epoch  9  loss 1.0995
+  epoch 10  loss 1.0776
+  epoch 11  loss 1.2371
+  epoch 12  loss 1.1769
+  epoch 13  loss 1.2166
+  epoch 14  loss 1.1390
+  epoch 15  loss 1.0165
+  leafnet_aug seed 1: train 107  val 0.586 (29)  camera-like 0.461 (232)  last year 0.342 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      18      18       3      25
+  cherry       9      23      10      22
+  chestn       1       9       6      16
+   maple       0       9       3      60
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       7       9       3      11
+  cherry       2      10       0      18
+  chestn       0       0       0      30
+   maple       0       6       0      24
+  epoch  1  loss 1.3748
+  epoch  2  loss 1.3400
+  epoch  3  loss 1.3649
+  epoch  4  loss 1.3201
+  epoch  5  loss 1.3137
+  epoch  6  loss 1.2435
+  epoch  7  loss 1.2439
+  epoch  8  loss 1.1808
+  epoch  9  loss 1.1737
+  epoch 10  loss 1.0928
+  epoch 11  loss 1.1183
+  epoch 12  loss 1.0688
+  epoch 13  loss 1.1243
+  epoch 14  loss 1.1999
+  epoch 15  loss 0.9952
+  leafnet_aug seed 2: train 107  val 0.586 (29)  camera-like 0.422 (232)  last year 0.400 (120)  [2s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      49      10       0       5
+  cherry      50      10       0       4
+  chestn      19       4       1       8
+   maple      29       4       1      38
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      18       4       0       8
+  cherry      19       2       0       9
+  chestn       1       0       0      29
+   maple       2       0       0      28
+
+variant        runs  train     your val (29)  camera-like (232)  last year (120)   change
+baseline          3    107   0.563 +-0.100      0.530 +-0.136    0.472 +-0.103   the Task 2 model, unchanged
+colour            3    107   0.690 +-0.034      0.644 +-0.065    0.519 +-0.065   ColorJitter=True
+geom              3    107   0.644 +-0.072      0.559 +-0.077    0.461 +-0.027   crop/flip/rotation=True
+aug               3    107   0.701 +-0.111      0.682 +-0.046    0.611 +-0.029   crop/flip/rotation=True; ColorJitter=True
+frozen            3    107   0.621 +-0.034      0.644 +-0.032    0.422 +-0.021   frozen backbone=True
+cosine            3    107   0.644 +-0.020      0.593 +-0.051    0.458 +-0.030   cosine LR=True
+epochs30          3    107   0.586 +-0.103      0.516 +-0.033    0.417 +-0.108   epochs=30
+adamw             3    107   0.563 +-0.100      0.526 +-0.129    0.444 +-0.076   optimizer=adamw; weight decay=0.0001
+smooth            3    107   0.621 +-0.000      0.580 +-0.032    0.431 +-0.027   label smoothing=0.1
+dropout50         3    107   0.713 +-0.087      0.585 +-0.052    0.503 +-0.041   dropout=0.5
+bestepoch         3    107   0.747 +-0.053      0.598 +-0.036    0.464 +-0.042   best-epoch weights=True
+leafnet           3    107   0.586 +-0.060      0.332 +-0.028    0.325 +-0.065   network=leafnet
+leafnet_gap       3    107   0.563 +-0.105      0.348 +-0.041    0.369 +-0.039   network=leafnet; global average pooling=True
+leafnet_drop      3    107   0.609 +-0.080      0.398 +-0.037    0.369 +-0.039   network=leafnet; dropout=0.5
+leafnet_aug       3    107   0.575 +-0.020      0.460 +-0.037    0.386 +-0.039   network=leafnet; crop/flip/rotation=True; ColorJitter=True
+
+one image on the 29-image set is 3.4 %, so read differences there as a guide only;
+the 232 and 120 image sets are the ones to trust, +- is the spread over the seeds.
+
+=== plus_history: training images=group+history on mps
+  epoch  1  loss 0.8141
+  epoch  2  loss 0.3186
+  epoch  3  loss 0.2002
+  epoch  4  loss 0.1696
+  epoch  5  loss 0.1184
+  epoch  6  loss 0.0960
+  epoch  7  loss 0.0773
+  epoch  8  loss 0.1167
+  epoch  9  loss 0.1194
+  epoch 10  loss 0.1012
+  epoch 11  loss 0.0607
+  epoch 12  loss 0.0387
+  epoch 13  loss 0.2292
+  epoch 14  loss 0.1529
+  epoch 15  loss 0.0907
+  plus_history seed 0: train 807  val 0.690 (29)  camera-like 0.603 (232)  last year  -  (in the training data)  [24s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      22      42       0       0
+  cherry       6      55       0       3
+  chestn       7       9      16       0
+   maple      12      13       0      47
+  epoch  1  loss 0.7874
+  epoch  2  loss 0.2965
+  epoch  3  loss 0.1452
+  epoch  4  loss 0.1046
+  epoch  5  loss 0.1567
+  epoch  6  loss 0.1575
+  epoch  7  loss 0.1075
+  epoch  8  loss 0.1076
+  epoch  9  loss 0.0987
+  epoch 10  loss 0.0498
+  epoch 11  loss 0.0636
+  epoch 12  loss 0.0366
+  epoch 13  loss 0.0370
+  epoch 14  loss 0.0301
+  epoch 15  loss 0.0217
+  plus_history seed 1: train 807  val 0.690 (29)  camera-like 0.569 (232)  last year  -  (in the training data)  [20s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      21      42       0       1
+  cherry      12      49       1       2
+  chestn       5      11      15       1
+   maple       5      17       3      47
+  epoch  1  loss 0.7695
+  epoch  2  loss 0.3146
+  epoch  3  loss 0.1763
+  epoch  4  loss 0.1813
+  epoch  5  loss 0.1836
+  epoch  6  loss 0.1744
+  epoch  7  loss 0.0827
+  epoch  8  loss 0.0678
+  epoch  9  loss 0.0655
+  epoch 10  loss 0.0851
+  epoch 11  loss 0.1146
+  epoch 12  loss 0.0810
+  epoch 13  loss 0.0694
+  epoch 14  loss 0.0441
+  epoch 15  loss 0.0366
+  plus_history seed 2: train 807  val 0.724 (29)  camera-like 0.547 (232)  last year  -  (in the training data)  [20s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      17      47       0       0
+  cherry       9      55       0       0
+  chestn       5      14      13       0
+   maple      12      18       0      42
+
+=== history_only: training images=history on mps
+  epoch  1  loss 0.7789
+  epoch  2  loss 0.2245
+  epoch  3  loss 0.1227
+  epoch  4  loss 0.0806
+  epoch  5  loss 0.0500
+  epoch  6  loss 0.0390
+  epoch  7  loss 0.0330
+  epoch  8  loss 0.0698
+  epoch  9  loss 0.0326
+  epoch 10  loss 0.0563
+  epoch 11  loss 0.0729
+  epoch 12  loss 0.0986
+  epoch 13  loss 0.1210
+  epoch 14  loss 0.0890
+  epoch 15  loss 0.0337
+  history_only seed 0: train 700  val 0.586 (29)  camera-like 0.608 (232)  last year  -  (in the training data)  [19s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      20      44       0       0
+  cherry      10      54       0       0
+  chestn       6      10      15       1
+   maple       7      13       0      52
+  epoch  1  loss 0.8383
+  epoch  2  loss 0.2159
+  epoch  3  loss 0.1806
+  epoch  4  loss 0.0949
+  epoch  5  loss 0.0590
+  epoch  6  loss 0.0460
+  epoch  7  loss 0.0542
+  epoch  8  loss 0.0365
+  epoch  9  loss 0.0551
+  epoch 10  loss 0.0493
+  epoch 11  loss 0.0752
+  epoch 12  loss 0.0932
+  epoch 13  loss 0.0945
+  epoch 14  loss 0.1104
+  epoch 15  loss 0.0339
+  history_only seed 1: train 700  val 0.724 (29)  camera-like 0.655 (232)  last year  -  (in the training data)  [17s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      17      45       0       2
+  cherry       3      60       0       1
+  chestn       0      16      16       0
+   maple       1       9       3      59
+  epoch  1  loss 0.7124
+  epoch  2  loss 0.1898
+  epoch  3  loss 0.1356
+  epoch  4  loss 0.0637
+  epoch  5  loss 0.0473
+  epoch  6  loss 0.0461
+  epoch  7  loss 0.0798
+  epoch  8  loss 0.1495
+  epoch  9  loss 0.1118
+  epoch 10  loss 0.1810
+  epoch 11  loss 0.1233
+  epoch 12  loss 0.0773
+  epoch 13  loss 0.0211
+  epoch 14  loss 0.0254
+  epoch 15  loss 0.0189
+  history_only seed 2: train 700  val 0.690 (29)  camera-like 0.547 (232)  last year  -  (in the training data)  [17s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      16      48       0       0
+  cherry       3      59       0       2
+  chestn       5      15      10       2
+   maple      13      17       0      42
+
+variant        runs  train     your val (29)  camera-like (232)  last year (120)   change
+baseline          3    107   0.563 +-0.100      0.530 +-0.136    0.472 +-0.103   the Task 2 model, unchanged
+colour            3    107   0.690 +-0.034      0.644 +-0.065    0.519 +-0.065   ColorJitter=True
+geom              3    107   0.644 +-0.072      0.559 +-0.077    0.461 +-0.027   crop/flip/rotation=True
+aug               3    107   0.701 +-0.111      0.682 +-0.046    0.611 +-0.029   crop/flip/rotation=True; ColorJitter=True
+frozen            3    107   0.621 +-0.034      0.644 +-0.032    0.422 +-0.021   frozen backbone=True
+cosine            3    107   0.644 +-0.020      0.593 +-0.051    0.458 +-0.030   cosine LR=True
+epochs30          3    107   0.586 +-0.103      0.516 +-0.033    0.417 +-0.108   epochs=30
+adamw             3    107   0.563 +-0.100      0.526 +-0.129    0.444 +-0.076   optimizer=adamw; weight decay=0.0001
+smooth            3    107   0.621 +-0.000      0.580 +-0.032    0.431 +-0.027   label smoothing=0.1
+dropout50         3    107   0.713 +-0.087      0.585 +-0.052    0.503 +-0.041   dropout=0.5
+bestepoch         3    107   0.747 +-0.053      0.598 +-0.036    0.464 +-0.042   best-epoch weights=True
+leafnet           3    107   0.586 +-0.060      0.332 +-0.028    0.325 +-0.065   network=leafnet
+leafnet_gap       3    107   0.563 +-0.105      0.348 +-0.041    0.369 +-0.039   network=leafnet; global average pooling=True
+leafnet_drop      3    107   0.609 +-0.080      0.398 +-0.037    0.369 +-0.039   network=leafnet; dropout=0.5
+leafnet_aug       3    107   0.575 +-0.020      0.460 +-0.037    0.386 +-0.039   network=leafnet; crop/flip/rotation=True; ColorJitter=True
+plus_history      3    807   0.701 +-0.020      0.573 +-0.028- (seen in training)   training images=group+history
+history_only      3    700   0.667 +-0.072      0.603 +-0.054- (seen in training)   training images=history
+
+one image on the 29-image set is 3.4 %, so read differences there as a guide only;
+the 232 and 120 image sets are the ones to trust, +- is the spread over the seeds.
+
+=== aug_best: crop/flip/rotation=True; ColorJitter=True; best-epoch weights=True on mps
+  epoch  1  loss 1.0673  val 0.517  best so far 0.517
+  epoch  2  loss 0.5700  val 0.552  best so far 0.552
+  epoch  3  loss 0.4411  val 0.621  best so far 0.621
+  epoch  4  loss 0.3887  val 0.621  best so far 0.621
+  epoch  5  loss 0.3825  val 0.655  best so far 0.655
+  epoch  6  loss 0.2970  val 0.621  best so far 0.655
+  epoch  7  loss 0.2101  val 0.621  best so far 0.655
+  epoch  8  loss 0.3187  val 0.621  best so far 0.655
+  epoch  9  loss 0.2696  val 0.655  best so far 0.655
+  epoch 10  loss 0.4149  val 0.586  best so far 0.655
+  epoch 11  loss 0.2268  val 0.517  best so far 0.655
+  epoch 12  loss 0.4050  val 0.517  best so far 0.655
+  epoch 13  loss 0.1231  val 0.517  best so far 0.655
+  epoch 14  loss 0.2704  val 0.621  best so far 0.655
+  epoch 15  loss 0.1662  val 0.621  best so far 0.655
+  aug_best seed 0: train 107  val 0.655 (29)  camera-like 0.522 (232)  last year 0.500 (120)  [6s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      11      45       6       2
+  cherry      16      46       1       1
+  chestn       3      12      17       0
+   maple       6       7      12      47
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       1      22       5       2
+  cherry       2      19       3       6
+  chestn       0       4      20       6
+   maple       1       5       4      20
+  epoch  1  loss 1.2134  val 0.690  best so far 0.690
+  epoch  2  loss 0.6441  val 0.724  best so far 0.724
+  epoch  3  loss 0.3730  val 0.759  best so far 0.759
+  epoch  4  loss 0.5163  val 0.655  best so far 0.759
+  epoch  5  loss 0.4541  val 0.655  best so far 0.759
+  epoch  6  loss 0.2784  val 0.655  best so far 0.759
+  epoch  7  loss 0.3382  val 0.690  best so far 0.759
+  epoch  8  loss 0.2807  val 0.724  best so far 0.759
+  epoch  9  loss 0.2582  val 0.793  best so far 0.793
+  epoch 10  loss 0.2326  val 0.724  best so far 0.793
+  epoch 11  loss 0.2088  val 0.759  best so far 0.793
+  epoch 12  loss 0.1662  val 0.690  best so far 0.793
+  epoch 13  loss 0.1882  val 0.655  best so far 0.793
+  epoch 14  loss 0.2205  val 0.690  best so far 0.793
+  epoch 15  loss 0.1726  val 0.655  best so far 0.793
+  aug_best seed 1: train 107  val 0.793 (29)  camera-like 0.720 (232)  last year 0.583 (120)  [4s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      25      39       0       0
+  cherry      12      52       0       0
+  chestn       2       3      27       0
+   maple       4       5       0      63
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      12      14       4       0
+  cherry       7      20       0       3
+  chestn       6       1      18       5
+   maple       4       1       5      20
+  epoch  1  loss 1.3073  val 0.586  best so far 0.586
+  epoch  2  loss 0.6630  val 0.690  best so far 0.690
+  epoch  3  loss 0.5495  val 0.793  best so far 0.793
+  epoch  4  loss 0.3412  val 0.793  best so far 0.793
+  epoch  5  loss 0.4871  val 0.828  best so far 0.828
+  epoch  6  loss 0.3626  val 0.724  best so far 0.828
+  epoch  7  loss 0.3932  val 0.759  best so far 0.828
+  epoch  8  loss 0.3939  val 0.759  best so far 0.828
+  epoch  9  loss 0.2272  val 0.793  best so far 0.828
+  epoch 10  loss 0.2115  val 0.690  best so far 0.828
+  epoch 11  loss 0.2243  val 0.724  best so far 0.828
+  epoch 12  loss 0.1901  val 0.724  best so far 0.828
+  epoch 13  loss 0.1326  val 0.690  best so far 0.828
+  epoch 14  loss 0.1991  val 0.724  best so far 0.828
+  epoch 15  loss 0.2292  val 0.793  best so far 0.828
+  aug_best seed 2: train 107  val 0.828 (29)  camera-like 0.677 (232)  last year 0.533 (120)  [4s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      36      15      13       0
+  cherry      21      26      17       0
+  chestn       1       0      31       0
+   maple       1       1       6      64
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      12       8      10       0
+  cherry       9       8      10       3
+  chestn       1       0      28       1
+   maple       0       1      13      16
+
+=== aug_long: epochs=30; crop/flip/rotation=True; ColorJitter=True on mps
+  epoch  1  loss 1.0673
+  epoch  2  loss 0.6444
+  epoch  3  loss 0.4608
+  epoch  4  loss 0.3752
+  epoch  5  loss 0.3190
+  epoch  6  loss 0.4392
+  epoch  7  loss 0.2468
+  epoch  8  loss 0.2219
+  epoch  9  loss 0.3768
+  epoch 10  loss 0.2415
+  epoch 11  loss 0.1951
+  epoch 12  loss 0.2621
+  epoch 13  loss 0.2308
+  epoch 14  loss 0.2588
+  epoch 15  loss 0.2107
+  epoch 16  loss 0.3365
+  epoch 17  loss 0.1007
+  epoch 18  loss 0.2009
+  epoch 19  loss 0.1604
+  epoch 20  loss 0.1793
+  epoch 21  loss 0.1931
+  epoch 22  loss 0.2079
+  epoch 23  loss 0.0908
+  epoch 24  loss 0.0757
+  epoch 25  loss 0.1307
+  epoch 26  loss 0.1974
+  epoch 27  loss 0.1033
+  epoch 28  loss 0.1307
+  epoch 29  loss 0.1218
+  epoch 30  loss 0.3720
+  aug_long seed 0: train 107  val 0.724 (29)  camera-like 0.651 (232)  last year 0.633 (120)  [7s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      15      48       1       0
+  cherry       9      53       2       0
+  chestn       5       8      19       0
+   maple       2       5       1      64
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       9      14       7       0
+  cherry       6      20       2       2
+  chestn       1       1      24       4
+   maple       2       0       5      23
+  epoch  1  loss 1.2134
+  epoch  2  loss 0.7582
+  epoch  3  loss 0.4599
+  epoch  4  loss 0.3035
+  epoch  5  loss 0.2469
+  epoch  6  loss 0.3847
+  epoch  7  loss 0.3133
+  epoch  8  loss 0.2258
+  epoch  9  loss 0.2894
+  epoch 10  loss 0.1541
+  epoch 11  loss 0.2348
+  epoch 12  loss 0.2954
+  epoch 13  loss 0.2467
+  epoch 14  loss 0.2434
+  epoch 15  loss 0.1350
+  epoch 16  loss 0.1465
+  epoch 17  loss 0.2659
+  epoch 18  loss 0.1654
+  epoch 19  loss 0.2250
+  epoch 20  loss 0.1288
+  epoch 21  loss 0.5851
+  epoch 22  loss 0.1761
+  epoch 23  loss 0.3264
+  epoch 24  loss 0.2214
+  epoch 25  loss 0.1774
+  epoch 26  loss 0.2200
+  epoch 27  loss 0.1578
+  epoch 28  loss 0.2113
+  epoch 29  loss 0.1376
+  epoch 30  loss 0.1418
+  aug_long seed 1: train 107  val 0.759 (29)  camera-like 0.716 (232)  last year 0.500 (120)  [7s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      33      20      11       0
+  cherry      19      40       3       2
+  chestn       2       6      22       2
+   maple       0       1       0      71
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      15       6       5       4
+  cherry       5      12       3      10
+  chestn       0       0       7      23
+   maple       0       1       3      26
+  epoch  1  loss 1.3073
+  epoch  2  loss 0.7184
+  epoch  3  loss 0.5274
+  epoch  4  loss 0.3360
+  epoch  5  loss 0.2963
+  epoch  6  loss 0.2106
+  epoch  7  loss 0.2902
+  epoch  8  loss 0.3432
+  epoch  9  loss 0.3691
+  epoch 10  loss 0.3264
+  epoch 11  loss 0.2437
+  epoch 12  loss 0.2850
+  epoch 13  loss 0.3059
+  epoch 14  loss 0.2142
+  epoch 15  loss 0.1821
+  epoch 16  loss 0.1606
+  epoch 17  loss 0.3162
+  epoch 18  loss 0.2195
+  epoch 19  loss 0.1294
+  epoch 20  loss 0.1257
+  epoch 21  loss 0.1903
+  epoch 22  loss 0.2124
+  epoch 23  loss 0.2248
+  epoch 24  loss 0.2122
+  epoch 25  loss 0.2039
+  epoch 26  loss 0.1398
+  epoch 27  loss 0.2505
+  epoch 28  loss 0.1256
+  epoch 29  loss 0.1794
+  epoch 30  loss 0.0924
+  aug_long seed 2: train 107  val 0.655 (29)  camera-like 0.664 (232)  last year 0.533 (120)  [7s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       5      57       1       1
+  cherry       4      60       0       0
+  chestn       0      15      17       0
+   maple       0       0       0      72
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       6      14       1       9
+  cherry       2      15       0      13
+  chestn       0       0      16      14
+   maple       2       0       1      27
+
+=== aug_cos_long: epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True on mps
+  epoch  1  loss 1.0673
+  epoch  2  loss 0.6441
+  epoch  3  loss 0.4609
+  epoch  4  loss 0.3780
+  epoch  5  loss 0.3122
+  epoch  6  loss 0.4348
+  epoch  7  loss 0.2391
+  epoch  8  loss 0.2128
+  epoch  9  loss 0.3592
+  epoch 10  loss 0.2842
+  epoch 11  loss 0.2165
+  epoch 12  loss 0.2043
+  epoch 13  loss 0.2743
+  epoch 14  loss 0.1889
+  epoch 15  loss 0.1845
+  epoch 16  loss 0.1865
+  epoch 17  loss 0.1294
+  epoch 18  loss 0.1250
+  epoch 19  loss 0.1284
+  epoch 20  loss 0.1746
+  epoch 21  loss 0.2645
+  epoch 22  loss 0.1294
+  epoch 23  loss 0.0822
+  epoch 24  loss 0.1401
+  epoch 25  loss 0.1023
+  epoch 26  loss 0.1503
+  epoch 27  loss 0.0926
+  epoch 28  loss 0.1505
+  epoch 29  loss 0.1121
+  epoch 30  loss 0.1310
+  aug_cos_long seed 0: train 107  val 0.690 (29)  camera-like 0.707 (232)  last year 0.650 (120)  [7s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      30      34       0       0
+  cherry      15      48       0       1
+  chestn       5      10      17       0
+   maple       2       0       1      69
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      16      11       3       0
+  cherry      10      16       0       4
+  chestn       1       1      20       8
+   maple       0       0       4      26
+  epoch  1  loss 1.2134
+  epoch  2  loss 0.7583
+  epoch  3  loss 0.4605
+  epoch  4  loss 0.3035
+  epoch  5  loss 0.2484
+  epoch  6  loss 0.3857
+  epoch  7  loss 0.3105
+  epoch  8  loss 0.1993
+  epoch  9  loss 0.2530
+  epoch 10  loss 0.1517
+  epoch 11  loss 0.2093
+  epoch 12  loss 0.2698
+  epoch 13  loss 0.2388
+  epoch 14  loss 0.1896
+  epoch 15  loss 0.0832
+  epoch 16  loss 0.1986
+  epoch 17  loss 0.1440
+  epoch 18  loss 0.1725
+  epoch 19  loss 0.2605
+  epoch 20  loss 0.0842
+  epoch 21  loss 0.2292
+  epoch 22  loss 0.0828
+  epoch 23  loss 0.0899
+  epoch 24  loss 0.2590
+  epoch 25  loss 0.0686
+  epoch 26  loss 0.1117
+  epoch 27  loss 0.1901
+  epoch 28  loss 0.2675
+  epoch 29  loss 0.0795
+  epoch 30  loss 0.1498
+  aug_cos_long seed 1: train 107  val 0.655 (29)  camera-like 0.728 (232)  last year 0.617 (120)  [7s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      27      36       1       0
+  cherry      15      47       1       1
+  chestn       0       7      25       0
+   maple       2       0       0      70
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      14      12       4       0
+  cherry       8      19       0       3
+  chestn       0       1      29       0
+   maple       6       4       8      12
+  epoch  1  loss 1.3073
+  epoch  2  loss 0.7185
+  epoch  3  loss 0.5271
+  epoch  4  loss 0.3360
+  epoch  5  loss 0.2967
+  epoch  6  loss 0.2105
+  epoch  7  loss 0.2903
+  epoch  8  loss 0.3216
+  epoch  9  loss 0.3807
+  epoch 10  loss 0.2971
+  epoch 11  loss 0.2303
+  epoch 12  loss 0.2140
+  epoch 13  loss 0.2621
+  epoch 14  loss 0.2117
+  epoch 15  loss 0.1137
+  epoch 16  loss 0.1064
+  epoch 17  loss 0.1694
+  epoch 18  loss 0.2077
+  epoch 19  loss 0.1409
+  epoch 20  loss 0.0908
+  epoch 21  loss 0.1466
+  epoch 22  loss 0.1172
+  epoch 23  loss 0.2359
+  epoch 24  loss 0.0997
+  epoch 25  loss 0.1645
+  epoch 26  loss 0.0753
+  epoch 27  loss 0.1780
+  epoch 28  loss 0.1207
+  epoch 29  loss 0.0851
+  epoch 30  loss 0.0601
+  aug_cos_long seed 2: train 107  val 0.793 (29)  camera-like 0.711 (232)  last year 0.633 (120)  [7s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      29      33       2       0
+  cherry      17      47       0       0
+  chestn       6       7      19       0
+   maple       1       0       1      70
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      22       6       2       0
+  cherry      16      10       2       2
+  chestn       6       0      18       6
+   maple       4       0       0      26
+
+variant        runs  train     your val (29)  camera-like (232)  last year (120)   change
+baseline          3    107   0.563 +-0.100      0.530 +-0.136    0.472 +-0.103   the Task 2 model, unchanged
+colour            3    107   0.690 +-0.034      0.644 +-0.065    0.519 +-0.065   ColorJitter=True
+geom              3    107   0.644 +-0.072      0.559 +-0.077    0.461 +-0.027   crop/flip/rotation=True
+aug               3    107   0.701 +-0.111      0.682 +-0.046    0.611 +-0.029   crop/flip/rotation=True; ColorJitter=True
+frozen            3    107   0.621 +-0.034      0.644 +-0.032    0.422 +-0.021   frozen backbone=True
+cosine            3    107   0.644 +-0.020      0.593 +-0.051    0.458 +-0.030   cosine LR=True
+epochs30          3    107   0.586 +-0.103      0.516 +-0.033    0.417 +-0.108   epochs=30
+adamw             3    107   0.563 +-0.100      0.526 +-0.129    0.444 +-0.076   optimizer=adamw; weight decay=0.0001
+smooth            3    107   0.621 +-0.000      0.580 +-0.032    0.431 +-0.027   label smoothing=0.1
+dropout50         3    107   0.713 +-0.087      0.585 +-0.052    0.503 +-0.041   dropout=0.5
+bestepoch         3    107   0.747 +-0.053      0.598 +-0.036    0.464 +-0.042   best-epoch weights=True
+leafnet           3    107   0.586 +-0.060      0.332 +-0.028    0.325 +-0.065   network=leafnet
+leafnet_gap       3    107   0.563 +-0.105      0.348 +-0.041    0.369 +-0.039   network=leafnet; global average pooling=True
+leafnet_drop      3    107   0.609 +-0.080      0.398 +-0.037    0.369 +-0.039   network=leafnet; dropout=0.5
+leafnet_aug       3    107   0.575 +-0.020      0.460 +-0.037    0.386 +-0.039   network=leafnet; crop/flip/rotation=True; ColorJitter=True
+plus_history      3    807   0.701 +-0.020      0.573 +-0.028  - (in training)   training images=group+history
+history_only      3    700   0.667 +-0.072      0.603 +-0.054  - (in training)   training images=history
+aug_best          3    107   0.759 +-0.091      0.639 +-0.104    0.539 +-0.042   crop/flip/rotation=True; ColorJitter=True; best-epoch weights=True
+aug_long          3    107   0.713 +-0.053      0.677 +-0.034    0.556 +-0.069   epochs=30; crop/flip/rotation=True; ColorJitter=True
+aug_cos_long      3    107   0.713 +-0.072      0.716 +-0.011    0.633 +-0.017   epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+
+one image on the 29-image set is 3.4 %, so read differences there as a guide only;
+the 232 and 120 image sets are the ones to trust, +- is the spread over the seeds.
+
+=== aug_data: training images=group+history; crop/flip/rotation=True; ColorJitter=True on mps
+  epoch  1  loss 0.9057
+  epoch  2  loss 0.5259
+  epoch  3  loss 0.4304
+  epoch  4  loss 0.4335
+  epoch  5  loss 0.3462
+  epoch  6  loss 0.2983
+  epoch  7  loss 0.2927
+  epoch  8  loss 0.3186
+  epoch  9  loss 0.2916
+  epoch 10  loss 0.2697
+  epoch 11  loss 0.2836
+  epoch 12  loss 0.3554
+  epoch 13  loss 0.2531
+  epoch 14  loss 0.2657
+  epoch 15  loss 0.2977
+  aug_data seed 0: train 807  val 0.724 (29)  camera-like 0.707 (232)  last year  -  (in the training data)  [28s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      25      39       0       0
+  cherry       6      54       0       4
+  chestn       1      15      15       1
+   maple       0       2       0      70
+  epoch  1  loss 0.7698
+  epoch  2  loss 0.5285
+  epoch  3  loss 0.4515
+  epoch  4  loss 0.4125
+  epoch  5  loss 0.4004
+  epoch  6  loss 0.3452
+  epoch  7  loss 0.3320
+  epoch  8  loss 0.3118
+  epoch  9  loss 0.3111
+  epoch 10  loss 0.3061
+  epoch 11  loss 0.2343
+  epoch 12  loss 0.2363
+  epoch 13  loss 0.2453
+  epoch 14  loss 0.3578
+  epoch 15  loss 0.2419
+  aug_data seed 1: train 807  val 0.724 (29)  camera-like 0.698 (232)  last year  -  (in the training data)  [27s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      38      25       1       0
+  cherry      17      46       0       1
+  chestn       5      11      16       0
+   maple       4       4       2      62
+  epoch  1  loss 0.8441
+  epoch  2  loss 0.5611
+  epoch  3  loss 0.4605
+  epoch  4  loss 0.3747
+  epoch  5  loss 0.3332
+  epoch  6  loss 0.3325
+  epoch  7  loss 0.2752
+  epoch  8  loss 0.3555
+  epoch  9  loss 0.2966
+  epoch 10  loss 0.2596
+  epoch 11  loss 0.3722
+  epoch 12  loss 0.3144
+  epoch 13  loss 0.3719
+  epoch 14  loss 0.2590
+  epoch 15  loss 0.2383
+  aug_data seed 2: train 807  val 0.724 (29)  camera-like 0.728 (232)  last year  -  (in the training data)  [26s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      41      23       0       0
+  cherry      20      40       0       4
+  chestn       6       8      17       1
+   maple       1       0       0      71
+
+variant        runs  train     your val (29)  camera-like (232)  last year (120)   change
+baseline          3    107   0.563 +-0.100      0.530 +-0.136    0.472 +-0.103   the Task 2 model, unchanged
+colour            3    107   0.690 +-0.034      0.644 +-0.065    0.519 +-0.065   ColorJitter=True
+geom              3    107   0.644 +-0.072      0.559 +-0.077    0.461 +-0.027   crop/flip/rotation=True
+aug               3    107   0.701 +-0.111      0.682 +-0.046    0.611 +-0.029   crop/flip/rotation=True; ColorJitter=True
+frozen            3    107   0.621 +-0.034      0.644 +-0.032    0.422 +-0.021   frozen backbone=True
+cosine            3    107   0.644 +-0.020      0.593 +-0.051    0.458 +-0.030   cosine LR=True
+epochs30          3    107   0.586 +-0.103      0.516 +-0.033    0.417 +-0.108   epochs=30
+adamw             3    107   0.563 +-0.100      0.526 +-0.129    0.444 +-0.076   optimizer=adamw; weight decay=0.0001
+smooth            3    107   0.621 +-0.000      0.580 +-0.032    0.431 +-0.027   label smoothing=0.1
+dropout50         3    107   0.713 +-0.087      0.585 +-0.052    0.503 +-0.041   dropout=0.5
+bestepoch         3    107   0.747 +-0.053      0.598 +-0.036    0.464 +-0.042   best-epoch weights=True
+leafnet           3    107   0.586 +-0.060      0.332 +-0.028    0.325 +-0.065   network=leafnet
+leafnet_gap       3    107   0.563 +-0.105      0.348 +-0.041    0.369 +-0.039   network=leafnet; global average pooling=True
+leafnet_drop      3    107   0.609 +-0.080      0.398 +-0.037    0.369 +-0.039   network=leafnet; dropout=0.5
+leafnet_aug       3    107   0.575 +-0.020      0.460 +-0.037    0.386 +-0.039   network=leafnet; crop/flip/rotation=True; ColorJitter=True
+plus_history      3    807   0.701 +-0.020      0.573 +-0.028  - (in training)   training images=group+history
+history_only      3    700   0.667 +-0.072      0.603 +-0.054  - (in training)   training images=history
+aug_best          3    107   0.759 +-0.091      0.639 +-0.104    0.539 +-0.042   crop/flip/rotation=True; ColorJitter=True; best-epoch weights=True
+aug_long          3    107   0.713 +-0.053      0.677 +-0.034    0.556 +-0.069   epochs=30; crop/flip/rotation=True; ColorJitter=True
+aug_cos_long      3    107   0.713 +-0.072      0.716 +-0.011    0.633 +-0.017   epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+aug_data          3    807   0.724 +-0.000      0.711 +-0.016  - (in training)   training images=group+history; crop/flip/rotation=True; ColorJitter=True
+
+one image on the 29-image set is 3.4 %, so read differences there as a guide only;
+the 232 and 120 image sets are the ones to trust, +- is the spread over the seeds.
+
+=== best: training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True on mps
+  epoch  1  loss 0.9057
+  epoch  2  loss 0.5255
+  epoch  3  loss 0.4269
+  epoch  4  loss 0.4385
+  epoch  5  loss 0.3399
+  epoch  6  loss 0.2687
+  epoch  7  loss 0.2799
+  epoch  8  loss 0.3041
+  epoch  9  loss 0.2928
+  epoch 10  loss 0.3046
+  epoch 11  loss 0.2476
+  epoch 12  loss 0.2924
+  epoch 13  loss 0.2232
+  epoch 14  loss 0.2144
+  epoch 15  loss 0.2064
+  epoch 16  loss 0.1882
+  epoch 17  loss 0.1750
+  epoch 18  loss 0.1588
+  epoch 19  loss 0.1741
+  epoch 20  loss 0.1640
+  epoch 21  loss 0.1401
+  epoch 22  loss 0.1082
+  epoch 23  loss 0.1493
+  epoch 24  loss 0.1134
+  epoch 25  loss 0.1120
+  epoch 26  loss 0.0983
+  epoch 27  loss 0.1237
+  epoch 28  loss 0.0974
+  epoch 29  loss 0.1090
+  epoch 30  loss 0.1142
+  best seed 0: train 807  val 0.793 (29)  camera-like 0.767 (232)  last year  -  (in the training data)  [53s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      43      21       0       0
+  cherry      16      47       0       1
+  chestn       6       9      17       0
+   maple       1       0       0      71
+  epoch  1  loss 0.7698
+  epoch  2  loss 0.5287
+  epoch  3  loss 0.4509
+  epoch  4  loss 0.3996
+  epoch  5  loss 0.3824
+  epoch  6  loss 0.3391
+  epoch  7  loss 0.3209
+  epoch  8  loss 0.2985
+  epoch  9  loss 0.3206
+  epoch 10  loss 0.2622
+  epoch 11  loss 0.2154
+  epoch 12  loss 0.2313
+  epoch 13  loss 0.2006
+  epoch 14  loss 0.2245
+  epoch 15  loss 0.2096
+  epoch 16  loss 0.1773
+  epoch 17  loss 0.1896
+  epoch 18  loss 0.1873
+  epoch 19  loss 0.1804
+  epoch 20  loss 0.1978
+  epoch 21  loss 0.1472
+  epoch 22  loss 0.1332
+  epoch 23  loss 0.1365
+  epoch 24  loss 0.1309
+  epoch 25  loss 0.1213
+  epoch 26  loss 0.1823
+  epoch 27  loss 0.1222
+  epoch 28  loss 0.1143
+  epoch 29  loss 0.1412
+  epoch 30  loss 0.1160
+  best seed 1: train 807  val 0.759 (29)  camera-like 0.750 (232)  last year  -  (in the training data)  [52s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      44      20       0       0
+  cherry      20      43       0       1
+  chestn       4      10      18       0
+   maple       2       1       0      69
+  epoch  1  loss 0.8441
+  epoch  2  loss 0.5613
+  epoch  3  loss 0.4632
+  epoch  4  loss 0.3668
+  epoch  5  loss 0.3294
+  epoch  6  loss 0.3466
+  epoch  7  loss 0.2995
+  epoch  8  loss 0.3053
+  epoch  9  loss 0.2637
+  epoch 10  loss 0.2503
+  epoch 11  loss 0.3012
+  epoch 12  loss 0.2524
+  epoch 13  loss 0.2409
+  epoch 14  loss 0.2105
+  epoch 15  loss 0.2007
+  epoch 16  loss 0.1834
+  epoch 17  loss 0.1852
+  epoch 18  loss 0.1838
+  epoch 19  loss 0.1387
+  epoch 20  loss 0.1715
+  epoch 21  loss 0.1579
+  epoch 22  loss 0.1169
+  epoch 23  loss 0.1313
+  epoch 24  loss 0.3097
+  epoch 25  loss 0.1054
+  epoch 26  loss 0.1256
+  epoch 27  loss 0.1038
+  epoch 28  loss 0.1304
+  epoch 29  loss 0.1212
+  epoch 30  loss 0.1172
+  best seed 2: train 807  val 0.793 (29)  camera-like 0.789 (232)  last year  -  (in the training data)  [52s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      50      14       0       0
+  cherry      20      43       0       1
+  chestn       1      13      18       0
+   maple       0       0       0      72
+
+=== best_be: training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True; best-epoch weights=True on mps
+  epoch  1  loss 0.9057  val 0.724  best so far 0.724
+  epoch  2  loss 0.5072  val 0.724  best so far 0.724
+  epoch  3  loss 0.4188  val 0.759  best so far 0.759
+  epoch  4  loss 0.3347  val 0.724  best so far 0.759
+  epoch  5  loss 0.3801  val 0.793  best so far 0.793
+  epoch  6  loss 0.3437  val 0.690  best so far 0.793
+  epoch  7  loss 0.3030  val 0.759  best so far 0.793
+  epoch  8  loss 0.3292  val 0.724  best so far 0.793
+  epoch  9  loss 0.2976  val 0.690  best so far 0.793
+  epoch 10  loss 0.2988  val 0.793  best so far 0.793
+  epoch 11  loss 0.2924  val 0.655  best so far 0.793
+  epoch 12  loss 0.2204  val 0.724  best so far 0.793
+  epoch 13  loss 0.2282  val 0.655  best so far 0.793
+  epoch 14  loss 0.1947  val 0.759  best so far 0.793
+  epoch 15  loss 0.1620  val 0.724  best so far 0.793
+  epoch 16  loss 0.2019  val 0.793  best so far 0.793
+  epoch 17  loss 0.2714  val 0.759  best so far 0.793
+  epoch 18  loss 0.1590  val 0.828  best so far 0.828
+  epoch 19  loss 0.1688  val 0.724  best so far 0.828
+  epoch 20  loss 0.1535  val 0.724  best so far 0.828
+  epoch 21  loss 0.1942  val 0.759  best so far 0.828
+  epoch 22  loss 0.1642  val 0.828  best so far 0.828
+  epoch 23  loss 0.1658  val 0.724  best so far 0.828
+  epoch 24  loss 0.1226  val 0.759  best so far 0.828
+  epoch 25  loss 0.1469  val 0.759  best so far 0.828
+  epoch 26  loss 0.1204  val 0.759  best so far 0.828
+  epoch 27  loss 0.1165  val 0.793  best so far 0.828
+  epoch 28  loss 0.1120  val 0.793  best so far 0.828
+  epoch 29  loss 0.1402  val 0.793  best so far 0.828
+  epoch 30  loss 0.1161  val 0.793  best so far 0.828
+  best_be seed 0: train 807  val 0.828 (29)  camera-like 0.733 (232)  last year  -  (in the training data)  [53s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      54       9       1       0
+  cherry      31      32       0       1
+  chestn       7       8      17       0
+   maple       2       3       0      67
+  epoch  1  loss 0.7698  val 0.655  best so far 0.655
+  epoch  2  loss 0.5175  val 0.690  best so far 0.690
+  epoch  3  loss 0.4202  val 0.690  best so far 0.690
+  epoch  4  loss 0.4332  val 0.690  best so far 0.690
+  epoch  5  loss 0.3647  val 0.690  best so far 0.690
+  epoch  6  loss 0.3076  val 0.759  best so far 0.759
+  epoch  7  loss 0.2794  val 0.724  best so far 0.759
+  epoch  8  loss 0.2899  val 0.724  best so far 0.759
+  epoch  9  loss 0.2778  val 0.724  best so far 0.759
+  epoch 10  loss 0.2520  val 0.793  best so far 0.793
+  epoch 11  loss 0.2328  val 0.621  best so far 0.793
+  epoch 12  loss 0.2329  val 0.759  best so far 0.793
+  epoch 13  loss 0.3172  val 0.759  best so far 0.793
+  epoch 14  loss 0.2717  val 0.862  best so far 0.862
+  epoch 15  loss 0.2637  val 0.828  best so far 0.862
+  epoch 16  loss 0.1957  val 0.724  best so far 0.862
+  epoch 17  loss 0.1819  val 0.828  best so far 0.862
+  epoch 18  loss 0.1666  val 0.759  best so far 0.862
+  epoch 19  loss 0.1803  val 0.724  best so far 0.862
+  epoch 20  loss 0.1396  val 0.724  best so far 0.862
+  epoch 21  loss 0.1754  val 0.724  best so far 0.862
+  epoch 22  loss 0.1357  val 0.759  best so far 0.862
+  epoch 23  loss 0.1364  val 0.759  best so far 0.862
+  epoch 24  loss 0.1555  val 0.759  best so far 0.862
+  epoch 25  loss 0.1341  val 0.793  best so far 0.862
+  epoch 26  loss 0.1147  val 0.793  best so far 0.862
+  epoch 27  loss 0.1342  val 0.793  best so far 0.862
+  epoch 28  loss 0.1313  val 0.759  best so far 0.862
+  epoch 29  loss 0.1240  val 0.759  best so far 0.862
+  epoch 30  loss 0.1152  val 0.759  best so far 0.862
+  best_be seed 1: train 807  val 0.862 (29)  camera-like 0.638 (232)  last year  -  (in the training data)  [53s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      20      44       0       0
+  cherry       2      60       0       2
+  chestn       0      17      15       0
+   maple       1      17       1      53
+  epoch  1  loss 0.8441  val 0.586  best so far 0.586
+  epoch  2  loss 0.5347  val 0.690  best so far 0.690
+  epoch  3  loss 0.4173  val 0.690  best so far 0.690
+  epoch  4  loss 0.3652  val 0.724  best so far 0.724
+  epoch  5  loss 0.3020  val 0.793  best so far 0.793
+  epoch  6  loss 0.3225  val 0.759  best so far 0.793
+  epoch  7  loss 0.3079  val 0.759  best so far 0.793
+  epoch  8  loss 0.3491  val 0.759  best so far 0.793
+  epoch  9  loss 0.2798  val 0.759  best so far 0.793
+  epoch 10  loss 0.2172  val 0.759  best so far 0.793
+  epoch 11  loss 0.2907  val 0.724  best so far 0.793
+  epoch 12  loss 0.2290  val 0.724  best so far 0.793
+  epoch 13  loss 0.2123  val 0.690  best so far 0.793
+  epoch 14  loss 0.1951  val 0.690  best so far 0.793
+  epoch 15  loss 0.2646  val 0.724  best so far 0.793
+  epoch 16  loss 0.2498  val 0.759  best so far 0.793
+  epoch 17  loss 0.1813  val 0.724  best so far 0.793
+  epoch 18  loss 0.1726  val 0.724  best so far 0.793
+  epoch 19  loss 0.1633  val 0.690  best so far 0.793
+  epoch 20  loss 0.1542  val 0.793  best so far 0.793
+  epoch 21  loss 0.1337  val 0.690  best so far 0.793
+  epoch 22  loss 0.1859  val 0.759  best so far 0.793
+  epoch 23  loss 0.1508  val 0.724  best so far 0.793
+  epoch 24  loss 0.1980  val 0.724  best so far 0.793
+  epoch 25  loss 0.1233  val 0.724  best so far 0.793
+  epoch 26  loss 0.1149  val 0.690  best so far 0.793
+  epoch 27  loss 0.1439  val 0.690  best so far 0.793
+  epoch 28  loss 0.1632  val 0.724  best so far 0.793
+  epoch 29  loss 0.1184  val 0.724  best so far 0.793
+  epoch 30  loss 0.1600  val 0.724  best so far 0.793
+  best_be seed 2: train 807  val 0.793 (29)  camera-like 0.728 (232)  last year  -  (in the training data)  [53s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      30      33       0       1
+  cherry       6      54       1       3
+  chestn       2       8      21       1
+   maple       0       0       8      64
+
+=== best_drop: training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; dropout=0.5; cosine LR=True on mps
+  epoch  1  loss 0.9875
+  epoch  2  loss 0.5778
+  epoch  3  loss 0.4871
+  epoch  4  loss 0.5090
+  epoch  5  loss 0.4367
+  epoch  6  loss 0.4005
+  epoch  7  loss 0.3291
+  epoch  8  loss 0.3243
+  epoch  9  loss 0.3046
+  epoch 10  loss 0.2608
+  epoch 11  loss 0.2795
+  epoch 12  loss 0.3657
+  epoch 13  loss 0.2558
+  epoch 14  loss 0.2603
+  epoch 15  loss 0.2422
+  epoch 16  loss 0.2133
+  epoch 17  loss 0.1925
+  epoch 18  loss 0.1988
+  epoch 19  loss 0.1819
+  epoch 20  loss 0.1740
+  epoch 21  loss 0.2169
+  epoch 22  loss 0.1409
+  epoch 23  loss 0.1594
+  epoch 24  loss 0.1429
+  epoch 25  loss 0.1597
+  epoch 26  loss 0.1136
+  epoch 27  loss 0.1477
+  epoch 28  loss 0.1178
+  epoch 29  loss 0.1355
+  epoch 30  loss 0.1470
+  best_drop seed 0: train 807  val 0.793 (29)  camera-like 0.746 (232)  last year  -  (in the training data)  [52s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      44      20       0       0
+  cherry      21      42       0       1
+  chestn       4      12      16       0
+   maple       0       1       0      71
+  epoch  1  loss 0.9031
+  epoch  2  loss 0.5529
+  epoch  3  loss 0.4926
+  epoch  4  loss 0.4389
+  epoch  5  loss 0.4125
+  epoch  6  loss 0.4315
+  epoch  7  loss 0.3446
+  epoch  8  loss 0.3050
+  epoch  9  loss 0.3092
+  epoch 10  loss 0.2815
+  epoch 11  loss 0.2370
+  epoch 12  loss 0.2285
+  epoch 13  loss 0.2469
+  epoch 14  loss 0.2922
+  epoch 15  loss 0.2496
+  epoch 16  loss 0.2122
+  epoch 17  loss 0.2137
+  epoch 18  loss 0.1745
+  epoch 19  loss 0.1958
+  epoch 20  loss 0.1796
+  epoch 21  loss 0.1586
+  epoch 22  loss 0.1662
+  epoch 23  loss 0.1552
+  epoch 24  loss 0.1817
+  epoch 25  loss 0.1346
+  epoch 26  loss 0.1570
+  epoch 27  loss 0.1350
+  epoch 28  loss 0.1344
+  epoch 29  loss 0.1663
+  epoch 30  loss 0.1215
+  best_drop seed 1: train 807  val 0.759 (29)  camera-like 0.737 (232)  last year  -  (in the training data)  [52s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      45      19       0       0
+  cherry      23      39       0       2
+  chestn       3      13      16       0
+   maple       1       0       0      71
+  epoch  1  loss 0.9006
+  epoch  2  loss 0.5661
+  epoch  3  loss 0.4946
+  epoch  4  loss 0.4393
+  epoch  5  loss 0.3580
+  epoch  6  loss 0.3328
+  epoch  7  loss 0.3213
+  epoch  8  loss 0.3165
+  epoch  9  loss 0.2610
+  epoch 10  loss 0.2911
+  epoch 11  loss 0.3229
+  epoch 12  loss 0.2865
+  epoch 13  loss 0.3024
+  epoch 14  loss 0.2384
+  epoch 15  loss 0.2321
+  epoch 16  loss 0.2155
+  epoch 17  loss 0.1912
+  epoch 18  loss 0.1894
+  epoch 19  loss 0.1890
+  epoch 20  loss 0.1986
+  epoch 21  loss 0.1735
+  epoch 22  loss 0.1458
+  epoch 23  loss 0.1587
+  epoch 24  loss 0.2256
+  epoch 25  loss 0.1537
+  epoch 26  loss 0.1623
+  epoch 27  loss 0.1456
+  epoch 28  loss 0.1716
+  epoch 29  loss 0.1376
+  epoch 30  loss 0.1316
+  best_drop seed 2: train 807  val 0.724 (29)  camera-like 0.754 (232)  last year  -  (in the training data)  [53s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      44      20       0       0
+  cherry      19      44       0       1
+  chestn       2      13      17       0
+   maple       1       1       0      70
+
+=== data_long: training images=group+history; epochs=30; cosine LR=True on mps
+  epoch  1  loss 0.8141
+  epoch  2  loss 0.3193
+  epoch  3  loss 0.1970
+  epoch  4  loss 0.1688
+  epoch  5  loss 0.1133
+  epoch  6  loss 0.0919
+  epoch  7  loss 0.0507
+  epoch  8  loss 0.0440
+  epoch  9  loss 0.0729
+  epoch 10  loss 0.0870
+  epoch 11  loss 0.0409
+  epoch 12  loss 0.0269
+  epoch 13  loss 0.0952
+  epoch 14  loss 0.0827
+  epoch 15  loss 0.0584
+  epoch 16  loss 0.0399
+  epoch 17  loss 0.0247
+  epoch 18  loss 0.0384
+  epoch 19  loss 0.0161
+  epoch 20  loss 0.0103
+  epoch 21  loss 0.0339
+  epoch 22  loss 0.0715
+  epoch 23  loss 0.0113
+  epoch 24  loss 0.0083
+  epoch 25  loss 0.0155
+  epoch 26  loss 0.0071
+  epoch 27  loss 0.0085
+  epoch 28  loss 0.0070
+  epoch 29  loss 0.0219
+  epoch 30  loss 0.0071
+  data_long seed 0: train 807  val 0.724 (29)  camera-like 0.672 (232)  last year  -  (in the training data)  [40s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      26      38       0       0
+  cherry      11      53       0       0
+  chestn       4      11      16       1
+   maple       0       7       4      61
+  epoch  1  loss 0.7874
+  epoch  2  loss 0.2962
+  epoch  3  loss 0.1444
+  epoch  4  loss 0.0977
+  epoch  5  loss 0.1582
+  epoch  6  loss 0.1505
+  epoch  7  loss 0.1154
+  epoch  8  loss 0.1158
+  epoch  9  loss 0.0882
+  epoch 10  loss 0.0492
+  epoch 11  loss 0.0560
+  epoch 12  loss 0.0691
+  epoch 13  loss 0.0586
+  epoch 14  loss 0.0250
+  epoch 15  loss 0.0184
+  epoch 16  loss 0.0312
+  epoch 17  loss 0.0177
+  epoch 18  loss 0.0403
+  epoch 19  loss 0.0146
+  epoch 20  loss 0.0510
+  epoch 21  loss 0.0202
+  epoch 22  loss 0.0098
+  epoch 23  loss 0.0150
+  epoch 24  loss 0.0122
+  epoch 25  loss 0.0120
+  epoch 26  loss 0.0107
+  epoch 27  loss 0.0058
+  epoch 28  loss 0.0068
+  epoch 29  loss 0.0090
+  epoch 30  loss 0.0512
+  data_long seed 1: train 807  val 0.724 (29)  camera-like 0.556 (232)  last year  -  (in the training data)  [40s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      30      33       0       1
+  cherry      24      39       0       1
+  chestn       9       9      13       1
+   maple      10      15       0      47
+  epoch  1  loss 0.7695
+  epoch  2  loss 0.3095
+  epoch  3  loss 0.1800
+  epoch  4  loss 0.1863
+  epoch  5  loss 0.1558
+  epoch  6  loss 0.1597
+  epoch  7  loss 0.0653
+  epoch  8  loss 0.0871
+  epoch  9  loss 0.0582
+  epoch 10  loss 0.0464
+  epoch 11  loss 0.0585
+  epoch 12  loss 0.0800
+  epoch 13  loss 0.0839
+  epoch 14  loss 0.0327
+  epoch 15  loss 0.0219
+  epoch 16  loss 0.0218
+  epoch 17  loss 0.0124
+  epoch 18  loss 0.0049
+  epoch 19  loss 0.0066
+  epoch 20  loss 0.0109
+  epoch 21  loss 0.0070
+  epoch 22  loss 0.0081
+  epoch 23  loss 0.0072
+  epoch 24  loss 0.0069
+  epoch 25  loss 0.0119
+  epoch 26  loss 0.0060
+  epoch 27  loss 0.0088
+  epoch 28  loss 0.0468
+  epoch 29  loss 0.0396
+  epoch 30  loss 0.0078
+  data_long seed 2: train 807  val 0.759 (29)  camera-like 0.616 (232)  last year  -  (in the training data)  [40s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      25      39       0       0
+  cherry       8      56       0       0
+  chestn       2      15      13       2
+   maple      18       4       1      49
+
+variant        runs  train     your val (29)  camera-like (232)  last year (120)   change
+baseline          3    107   0.563 +-0.100      0.530 +-0.136    0.472 +-0.103   the Task 2 model, unchanged
+colour            3    107   0.690 +-0.034      0.644 +-0.065    0.519 +-0.065   ColorJitter=True
+geom              3    107   0.644 +-0.072      0.559 +-0.077    0.461 +-0.027   crop/flip/rotation=True
+aug               3    107   0.701 +-0.111      0.682 +-0.046    0.611 +-0.029   crop/flip/rotation=True; ColorJitter=True
+frozen            3    107   0.621 +-0.034      0.644 +-0.032    0.422 +-0.021   frozen backbone=True
+cosine            3    107   0.644 +-0.020      0.593 +-0.051    0.458 +-0.030   cosine LR=True
+epochs30          3    107   0.586 +-0.103      0.516 +-0.033    0.417 +-0.108   epochs=30
+adamw             3    107   0.563 +-0.100      0.526 +-0.129    0.444 +-0.076   optimizer=adamw; weight decay=0.0001
+smooth            3    107   0.621 +-0.000      0.580 +-0.032    0.431 +-0.027   label smoothing=0.1
+dropout50         3    107   0.713 +-0.087      0.585 +-0.052    0.503 +-0.041   dropout=0.5
+bestepoch         3    107   0.747 +-0.053      0.598 +-0.036    0.464 +-0.042   best-epoch weights=True
+leafnet           3    107   0.586 +-0.060      0.332 +-0.028    0.325 +-0.065   network=leafnet
+leafnet_gap       3    107   0.563 +-0.105      0.348 +-0.041    0.369 +-0.039   network=leafnet; global average pooling=True
+leafnet_drop      3    107   0.609 +-0.080      0.398 +-0.037    0.369 +-0.039   network=leafnet; dropout=0.5
+leafnet_aug       3    107   0.575 +-0.020      0.460 +-0.037    0.386 +-0.039   network=leafnet; crop/flip/rotation=True; ColorJitter=True
+plus_history      3    807   0.701 +-0.020      0.573 +-0.028  - (in training)   training images=group+history
+history_only      3    700   0.667 +-0.072      0.603 +-0.054  - (in training)   training images=history
+aug_best          3    107   0.759 +-0.091      0.639 +-0.104    0.539 +-0.042   crop/flip/rotation=True; ColorJitter=True; best-epoch weights=True
+aug_long          3    107   0.713 +-0.053      0.677 +-0.034    0.556 +-0.069   epochs=30; crop/flip/rotation=True; ColorJitter=True
+aug_cos_long      3    107   0.713 +-0.072      0.716 +-0.011    0.633 +-0.017   epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+aug_data          3    807   0.724 +-0.000      0.711 +-0.016  - (in training)   training images=group+history; crop/flip/rotation=True; ColorJitter=True
+best              3    807   0.782 +-0.020      0.769 +-0.019  - (in training)   training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+best_be           3    807   0.828 +-0.034      0.700 +-0.054  - (in training)   training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True; best-epoch weights=True
+best_drop         3    807   0.759 +-0.035      0.746 +-0.009  - (in training)   training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; dropout=0.5; cosine LR=True
+data_long         3    807   0.736 +-0.020      0.615 +-0.058  - (in training)   training images=group+history; epochs=30; cosine LR=True
+
+one image on the 29-image set is 3.4 %, so read differences there as a guide only;
+the 232 and 120 image sets are the ones to trust, +- is the spread over the seeds.
+
+=== baseline: baseline on mps
+  epoch  1  loss 1.0439
+  epoch  2  loss 0.2259
+  epoch  3  loss 0.0770
+  epoch  4  loss 0.0278
+  epoch  5  loss 0.0113
+  epoch  6  loss 0.0144
+  epoch  7  loss 0.0042
+  epoch  8  loss 0.0128
+  epoch  9  loss 0.0083
+  epoch 10  loss 0.0006
+  epoch 11  loss 0.0092
+  epoch 12  loss 0.1515
+  epoch 13  loss 0.0419
+  epoch 14  loss 0.2136
+  epoch 15  loss 0.0587
+  baseline seed 3: train 107  val 0.586 (29)  camera-like 0.655 (232)  last year 0.500 (120)  [4s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      13      48       0       3
+  cherry       3      60       0       1
+  chestn       8      10       9       5
+   maple       0       2       0      70
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       1      22       0       7
+  cherry       1      21       0       8
+  chestn       0       4      12      14
+   maple       2       2       0      26
+  epoch  1  loss 0.9905
+  epoch  2  loss 0.2393
+  epoch  3  loss 0.0493
+  epoch  4  loss 0.0524
+  epoch  5  loss 0.0062
+  epoch  6  loss 0.0385
+  epoch  7  loss 0.0094
+  epoch  8  loss 0.0807
+  epoch  9  loss 0.0133
+  epoch 10  loss 0.0106
+  epoch 11  loss 0.1602
+  epoch 12  loss 0.0313
+  epoch 13  loss 0.0614
+  epoch 14  loss 0.1697
+  epoch 15  loss 0.2305
+  baseline seed 4: train 107  val 0.586 (29)  camera-like 0.586 (232)  last year 0.475 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       3      58       1       2
+  cherry       5      56       0       3
+  chestn       3      20       7       2
+   maple       2       0       0      70
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       3      17       7       3
+  cherry       3      18       3       6
+  chestn       0       2      22       6
+   maple       0       2      14      14
+
+=== colour: ColorJitter=True on mps
+  epoch  1  loss 1.1707
+  epoch  2  loss 0.3970
+  epoch  3  loss 0.2591
+  epoch  4  loss 0.1055
+  epoch  5  loss 0.0770
+  epoch  6  loss 0.0566
+  epoch  7  loss 0.0311
+  epoch  8  loss 0.0447
+  epoch  9  loss 0.0126
+  epoch 10  loss 0.0032
+  epoch 11  loss 0.2272
+  epoch 12  loss 0.1219
+  epoch 13  loss 0.0805
+  epoch 14  loss 0.0436
+  epoch 15  loss 0.1590
+  colour seed 3: train 107  val 0.690 (29)  camera-like 0.659 (232)  last year 0.567 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      14      47       0       3
+  cherry       4      57       0       3
+  chestn       4      10      11       7
+   maple       0       1       0      71
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      14      10       1       5
+  cherry       6      14       1       9
+  chestn       3       3      12      12
+   maple       2       0       0      28
+  epoch  1  loss 1.0214
+  epoch  2  loss 0.4317
+  epoch  3  loss 0.1905
+  epoch  4  loss 0.2022
+  epoch  5  loss 0.0865
+  epoch  6  loss 0.1316
+  epoch  7  loss 0.3100
+  epoch  8  loss 0.0567
+  epoch  9  loss 0.4248
+  epoch 10  loss 0.0681
+  epoch 11  loss 0.0165
+  epoch 12  loss 0.0733
+  epoch 13  loss 0.0331
+  epoch 14  loss 0.1449
+  epoch 15  loss 0.0302
+  colour seed 4: train 107  val 0.690 (29)  camera-like 0.668 (232)  last year 0.550 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      34      23       0       7
+  cherry      26      36       0       2
+  chestn       8       8      16       0
+   maple       2       1       0      69
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      15      14       1       0
+  cherry      18       8       0       4
+  chestn       1       2      16      11
+   maple       1       1       1      27
+
+=== geom: crop/flip/rotation=True on mps
+  epoch  1  loss 1.1921
+  epoch  2  loss 0.6272
+  epoch  3  loss 0.4647
+  epoch  4  loss 0.2971
+  epoch  5  loss 0.3027
+  epoch  6  loss 0.4112
+  epoch  7  loss 0.1991
+  epoch  8  loss 0.1930
+  epoch  9  loss 0.1457
+  epoch 10  loss 0.2162
+  epoch 11  loss 0.2044
+  epoch 12  loss 0.1665
+  epoch 13  loss 0.0703
+  epoch 14  loss 0.0997
+  epoch 15  loss 0.1494
+  geom seed 3: train 107  val 0.621 (29)  camera-like 0.530 (232)  last year 0.508 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      10      54       0       0
+  cherry       7      56       0       1
+  chestn       0      26       2       4
+   maple       3      14       0      55
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      14      15       0       1
+  cherry       5      22       0       3
+  chestn       2      15       0      13
+   maple       1       4       0      25
+  epoch  1  loss 1.1557
+  epoch  2  loss 0.5553
+  epoch  3  loss 0.3658
+  epoch  4  loss 0.2502
+  epoch  5  loss 0.3504
+  epoch  6  loss 0.2122
+  epoch  7  loss 0.3771
+  epoch  8  loss 0.1594
+  epoch  9  loss 0.1709
+  epoch 10  loss 0.0835
+  epoch 11  loss 0.2063
+  epoch 12  loss 0.1689
+  epoch 13  loss 0.1707
+  epoch 14  loss 0.1148
+  epoch 15  loss 0.0731
+  geom seed 4: train 107  val 0.621 (29)  camera-like 0.603 (232)  last year 0.342 (120)  [3s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      13      51       0       0
+  cherry       3      61       0       0
+  chestn       0      17      15       0
+   maple       9      11       1      51
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       6      24       0       0
+  cherry       4      24       0       2
+  chestn       7      15       5       3
+   maple       6      17       1       6
+
+=== aug: crop/flip/rotation=True; ColorJitter=True on mps
+  epoch  1  loss 1.2744
+  epoch  2  loss 0.5986
+  epoch  3  loss 0.6271
+  epoch  4  loss 0.4332
+  epoch  5  loss 0.3713
+  epoch  6  loss 0.2930
+  epoch  7  loss 0.2334
+  epoch  8  loss 0.3988
+  epoch  9  loss 0.4816
+  epoch 10  loss 0.3144
+  epoch 11  loss 0.2848
+  epoch 12  loss 0.2719
+  epoch 13  loss 0.1478
+  epoch 14  loss 0.1491
+  epoch 15  loss 0.2511
+  aug seed 3: train 107  val 0.655 (29)  camera-like 0.690 (232)  last year 0.583 (120)  [4s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      27      37       0       0
+  cherry      18      45       0       1
+  chestn       5      10      17       0
+   maple       1       0       0      71
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       6      22       2       0
+  cherry       4      21       0       5
+  chestn       1       4      21       4
+   maple       2       1       5      22
+  epoch  1  loss 1.1372
+  epoch  2  loss 0.7544
+  epoch  3  loss 0.4728
+  epoch  4  loss 0.4153
+  epoch  5  loss 0.4064
+  epoch  6  loss 0.4132
+  epoch  7  loss 0.2706
+  epoch  8  loss 0.3488
+  epoch  9  loss 0.1770
+  epoch 10  loss 0.2649
+  epoch 11  loss 0.3423
+  epoch 12  loss 0.1449
+  epoch 13  loss 0.2149
+  epoch 14  loss 0.1525
+  epoch 15  loss 0.2498
+  aug seed 4: train 107  val 0.621 (29)  camera-like 0.664 (232)  last year 0.542 (120)  [4s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      15      39      10       0
+  cherry      13      47       3       1
+  chestn       0       8      24       0
+   maple       2       1       1      68
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       9      11       8       2
+  cherry       4      17       3       6
+  chestn       1       1      19       9
+   maple       3       3       4      20
+
+=== aug_cos_long: epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True on mps
+  epoch  1  loss 1.2744
+  epoch  2  loss 0.5988
+  epoch  3  loss 0.6265
+  epoch  4  loss 0.4312
+  epoch  5  loss 0.3833
+  epoch  6  loss 0.2869
+  epoch  7  loss 0.2347
+  epoch  8  loss 0.3805
+  epoch  9  loss 0.4701
+  epoch 10  loss 0.2828
+  epoch 11  loss 0.2240
+  epoch 12  loss 0.2669
+  epoch 13  loss 0.1444
+  epoch 14  loss 0.1347
+  epoch 15  loss 0.3037
+  epoch 16  loss 0.1720
+  epoch 17  loss 0.2060
+  epoch 18  loss 0.1874
+  epoch 19  loss 0.1025
+  epoch 20  loss 0.2100
+  epoch 21  loss 0.1393
+  epoch 22  loss 0.0935
+  epoch 23  loss 0.2222
+  epoch 24  loss 0.0802
+  epoch 25  loss 0.0977
+  epoch 26  loss 0.0805
+  epoch 27  loss 0.0887
+  epoch 28  loss 0.0933
+  epoch 29  loss 0.1371
+  epoch 30  loss 0.2262
+  aug_cos_long seed 3: train 107  val 0.690 (29)  camera-like 0.767 (232)  last year 0.650 (120)  [7s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      40      24       0       0
+  cherry      19      45       0       0
+  chestn       4       7      21       0
+   maple       0       0       0      72
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      11      15       3       1
+  cherry       7      19       0       4
+  chestn       2       1      23       4
+   maple       1       1       3      25
+  epoch  1  loss 1.1372
+  epoch  2  loss 0.7545
+  epoch  3  loss 0.4739
+  epoch  4  loss 0.4108
+  epoch  5  loss 0.4204
+  epoch  6  loss 0.4273
+  epoch  7  loss 0.2742
+  epoch  8  loss 0.3505
+  epoch  9  loss 0.1721
+  epoch 10  loss 0.2542
+  epoch 11  loss 0.3757
+  epoch 12  loss 0.1515
+  epoch 13  loss 0.2089
+  epoch 14  loss 0.1581
+  epoch 15  loss 0.2530
+  epoch 16  loss 0.0833
+  epoch 17  loss 0.1308
+  epoch 18  loss 0.2356
+  epoch 19  loss 0.2329
+  epoch 20  loss 0.1528
+  epoch 21  loss 0.1267
+  epoch 22  loss 0.1530
+  epoch 23  loss 0.1830
+  epoch 24  loss 0.1715
+  epoch 25  loss 0.1278
+  epoch 26  loss 0.1914
+  epoch 27  loss 0.1180
+  epoch 28  loss 0.1010
+  epoch 29  loss 0.2005
+  epoch 30  loss 0.0756
+  aug_cos_long seed 4: train 107  val 0.690 (29)  camera-like 0.728 (232)  last year 0.583 (120)  [7s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      44      15       5       0
+  cherry      33      31       0       0
+  chestn       4       5      23       0
+   maple       0       1       0      71
+  confusion on last year (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      12       9       3       6
+  cherry       7      13       1       9
+  chestn       1       1      22       6
+   maple       1       1       5      23
+
+=== plus_history: training images=group+history on mps
+  epoch  1  loss 0.8062
+  epoch  2  loss 0.2686
+  epoch  3  loss 0.1803
+  epoch  4  loss 0.1416
+  epoch  5  loss 0.1292
+  epoch  6  loss 0.0794
+  epoch  7  loss 0.0901
+  epoch  8  loss 0.1632
+  epoch  9  loss 0.1690
+  epoch 10  loss 0.1079
+  epoch 11  loss 0.1687
+  epoch 12  loss 0.0946
+  epoch 13  loss 0.0972
+  epoch 14  loss 0.0490
+  epoch 15  loss 0.0249
+  plus_history seed 3: train 807  val 0.655 (29)  camera-like 0.517 (232)  last year  -  (in the training data)  [21s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      24      40       0       0
+  cherry      11      53       0       0
+  chestn       8      11      11       2
+   maple      18      22       0      32
+  epoch  1  loss 0.7679
+  epoch  2  loss 0.2796
+  epoch  3  loss 0.1572
+  epoch  4  loss 0.1333
+  epoch  5  loss 0.1755
+  epoch  6  loss 0.2442
+  epoch  7  loss 0.1416
+  epoch  8  loss 0.1035
+  epoch  9  loss 0.0492
+  epoch 10  loss 0.0493
+  epoch 11  loss 0.0406
+  epoch 12  loss 0.0455
+  epoch 13  loss 0.0258
+  epoch 14  loss 0.0333
+  epoch 15  loss 0.0175
+  plus_history seed 4: train 807  val 0.793 (29)  camera-like 0.539 (232)  last year  -  (in the training data)  [20s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      27      36       0       1
+  cherry      14      45       1       4
+  chestn      13      10       9       0
+   maple      17      11       0      44
+
+=== history_only: training images=history on mps
+  epoch  1  loss 0.7690
+  epoch  2  loss 0.2316
+  epoch  3  loss 0.1259
+  epoch  4  loss 0.0975
+  epoch  5  loss 0.0784
+  epoch  6  loss 0.0834
+  epoch  7  loss 0.0775
+  epoch  8  loss 0.1221
+  epoch  9  loss 0.0914
+  epoch 10  loss 0.0369
+  epoch 11  loss 0.0204
+  epoch 12  loss 0.0279
+  epoch 13  loss 0.0289
+  epoch 14  loss 0.0185
+  epoch 15  loss 0.0113
+  history_only seed 3: train 700  val 0.690 (29)  camera-like 0.603 (232)  last year  -  (in the training data)  [18s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      15      48       0       1
+  cherry       6      56       0       2
+  chestn       2      14      15       1
+   maple      15       2       1      54
+  epoch  1  loss 0.7955
+  epoch  2  loss 0.1992
+  epoch  3  loss 0.0898
+  epoch  4  loss 0.1300
+  epoch  5  loss 0.1206
+  epoch  6  loss 0.1014
+  epoch  7  loss 0.0602
+  epoch  8  loss 0.0392
+  epoch  9  loss 0.0272
+  epoch 10  loss 0.0296
+  epoch 11  loss 0.0417
+  epoch 12  loss 0.0483
+  epoch 13  loss 0.0697
+  epoch 14  loss 0.0784
+  epoch 15  loss 0.1431
+  history_only seed 4: train 700  val 0.621 (29)  camera-like 0.496 (232)  last year  -  (in the training data)  [17s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple       5      59       0       0
+  cherry       2      61       0       1
+  chestn       1      18      13       0
+   maple       7      29       0      36
+
+=== best: training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True on mps
+  epoch  1  loss 0.8501
+  epoch  2  loss 0.5332
+  epoch  3  loss 0.4059
+  epoch  4  loss 0.4018
+  epoch  5  loss 0.3230
+  epoch  6  loss 0.3345
+  epoch  7  loss 0.2961
+  epoch  8  loss 0.3070
+  epoch  9  loss 0.2529
+  epoch 10  loss 0.2425
+  epoch 11  loss 0.2845
+  epoch 12  loss 0.2270
+  epoch 13  loss 0.2599
+  epoch 14  loss 0.2285
+  epoch 15  loss 0.1995
+  epoch 16  loss 0.1749
+  epoch 17  loss 0.1454
+  epoch 18  loss 0.1781
+  epoch 19  loss 0.1801
+  epoch 20  loss 0.1279
+  epoch 21  loss 0.1298
+  epoch 22  loss 0.1759
+  epoch 23  loss 0.1714
+  epoch 24  loss 0.1217
+  epoch 25  loss 0.1798
+  epoch 26  loss 0.1031
+  epoch 27  loss 0.1197
+  epoch 28  loss 0.1065
+  epoch 29  loss 0.1319
+  epoch 30  loss 0.1078
+  best seed 3: train 807  val 0.759 (29)  camera-like 0.750 (232)  last year  -  (in the training data)  [55s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      41      23       0       0
+  cherry      18      43       0       3
+  chestn       3      11      18       0
+   maple       0       0       0      72
+  epoch  1  loss 0.8861
+  epoch  2  loss 0.5447
+  epoch  3  loss 0.4190
+  epoch  4  loss 0.4244
+  epoch  5  loss 0.3582
+  epoch  6  loss 0.3136
+  epoch  7  loss 0.2889
+  epoch  8  loss 0.3121
+  epoch  9  loss 0.2802
+  epoch 10  loss 0.2725
+  epoch 11  loss 0.2644
+  epoch 12  loss 0.2131
+  epoch 13  loss 0.2583
+  epoch 14  loss 0.2602
+  epoch 15  loss 0.2336
+  epoch 16  loss 0.1789
+  epoch 17  loss 0.1622
+  epoch 18  loss 0.1538
+  epoch 19  loss 0.1744
+  epoch 20  loss 0.1620
+  epoch 21  loss 0.1346
+  epoch 22  loss 0.1108
+  epoch 23  loss 0.1269
+  epoch 24  loss 0.1241
+  epoch 25  loss 0.1196
+  epoch 26  loss 0.1082
+  epoch 27  loss 0.1208
+  epoch 28  loss 0.0968
+  epoch 29  loss 0.1002
+  epoch 30  loss 0.1337
+  best seed 4: train 807  val 0.759 (29)  camera-like 0.776 (232)  last year  -  (in the training data)  [55s]
+  confusion on camera-like (rows = true, cols = predicted)
+        apple  cherry  chestn   maple
+   apple      44      20       0       0
+  cherry      16      45       0       3
+  chestn       3      10      19       0
+   maple       0       0       0      72
+
+variant        runs  train     your val (29)  camera-like (232)  last year (120)   change
+baseline          5    107   0.572 +-0.071      0.566 +-0.111    0.478 +-0.074   the Task 2 model, unchanged
+colour            5    107   0.690 +-0.024      0.652 +-0.048    0.535 +-0.051   ColorJitter=True
+geom              5    107   0.634 +-0.052      0.562 +-0.060    0.447 +-0.065   crop/flip/rotation=True
+aug               5    107   0.676 +-0.087      0.680 +-0.034    0.592 +-0.037   crop/flip/rotation=True; ColorJitter=True
+frozen            3    107   0.621 +-0.034      0.644 +-0.032    0.422 +-0.021   frozen backbone=True
+cosine            3    107   0.644 +-0.020      0.593 +-0.051    0.458 +-0.030   cosine LR=True
+epochs30          3    107   0.586 +-0.103      0.516 +-0.033    0.417 +-0.108   epochs=30
+adamw             3    107   0.563 +-0.100      0.526 +-0.129    0.444 +-0.076   optimizer=adamw; weight decay=0.0001
+smooth            3    107   0.621 +-0.000      0.580 +-0.032    0.431 +-0.027   label smoothing=0.1
+dropout50         3    107   0.713 +-0.087      0.585 +-0.052    0.503 +-0.041   dropout=0.5
+bestepoch         3    107   0.747 +-0.053      0.598 +-0.036    0.464 +-0.042   best-epoch weights=True
+leafnet           3    107   0.586 +-0.060      0.332 +-0.028    0.325 +-0.065   network=leafnet
+leafnet_gap       3    107   0.563 +-0.105      0.348 +-0.041    0.369 +-0.039   network=leafnet; global average pooling=True
+leafnet_drop      3    107   0.609 +-0.080      0.398 +-0.037    0.369 +-0.039   network=leafnet; dropout=0.5
+leafnet_aug       3    107   0.575 +-0.020      0.460 +-0.037    0.386 +-0.039   network=leafnet; crop/flip/rotation=True; ColorJitter=True
+plus_history      5    807   0.710 +-0.052      0.555 +-0.033  - (in training)   training images=group+history
+history_only      5    700   0.662 +-0.057      0.582 +-0.061  - (in training)   training images=history
+aug_best          3    107   0.759 +-0.091      0.639 +-0.104    0.539 +-0.042   crop/flip/rotation=True; ColorJitter=True; best-epoch weights=True
+aug_long          3    107   0.713 +-0.053      0.677 +-0.034    0.556 +-0.069   epochs=30; crop/flip/rotation=True; ColorJitter=True
+aug_cos_long      5    107   0.703 +-0.052      0.728 +-0.024    0.627 +-0.028   epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+aug_data          3    807   0.724 +-0.000      0.711 +-0.016  - (in training)   training images=group+history; crop/flip/rotation=True; ColorJitter=True
+best              5    807   0.772 +-0.019      0.766 +-0.017  - (in training)   training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True
+best_be           3    807   0.828 +-0.034      0.700 +-0.054  - (in training)   training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; cosine LR=True; best-epoch weights=True
+best_drop         3    807   0.759 +-0.035      0.746 +-0.009  - (in training)   training images=group+history; epochs=30; crop/flip/rotation=True; ColorJitter=True; dropout=0.5; cosine LR=True
+data_long         3    807   0.736 +-0.020      0.615 +-0.058  - (in training)   training images=group+history; epochs=30; cosine LR=True
+
+one image on the 29-image set is 3.4 %, so read differences there as a guide only;
+the 232 and 120 image sets are the ones to trust, +- is the spread over the seeds.
