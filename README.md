@@ -51,7 +51,9 @@ The page makes two kinds of request, both visible in the Network panel:
 * its own files from this GitHub Pages site (`leaf_model.onnx`, `model_info.json`,
   `check_expected.json`, `check_image.jpg`),
 * ONNX Runtime Web and its `.wasm` from jsDelivr — a pinned, fixed library file, the same for every
-  visitor, with nothing from the camera in it.
+  visitor, with nothing from the camera in it. If jsDelivr fails to answer, the runtime is retried
+  from `unpkg.com` (the same pinned `1.31.1` build, `ORT_BUILDS` in `index.html`), so a second CDN
+  origin can appear in the log — measured runs never needed it.
 
 No image, frame, filename or identifier is ever sent anywhere: the pixel data goes from
 `<video>` into a canvas and from there into a `Float32Array` in this tab. No fonts, no analytics,
@@ -63,6 +65,13 @@ no cookies, no external QR-image service (the QR code is an SVG drawn into `inde
   `?selftest=1`). It pushes `check_image.jpg` through the identical camera pipeline and prints its
   probabilities next to `check_expected.json`, with the difference per class. Measured in Chrome:
   every class agrees to six decimals (largest difference 0.000000), top class *cherry*.
+  **Re-checking it in Python needs a `libjpeg-turbo` decoder.** Decoding `check_image.jpg` with
+  OpenCV or `torchvision.io` and running `leaf_model.onnx` on those pixels reproduces
+  `check_expected.json` to 1.3e-07 — pixel-for-pixel the same bytes Chrome's canvas produces.
+  Decoding the same file with Pillow produces different pixels (26 % of them, by up to 16 levels)
+  and lands 0.0017 off on the top class, which looks like a broken page but is the JPEG decoder:
+  this model is certain of its answer, so a one-level pixel change moves a class sitting at 0.0005
+  by a quarter of its value. Compare through the page, or through a `libjpeg-turbo` decode.
 * **What the model is fed** — the "What the model is fed" box at the bottom of the page restates
   the classes, the tensor shape and the pipeline that `model_info.json` implies.
 * **The QR code** — `python3 -I make_qr.py AnnaHolubarova mlr-ex08` regenerates it from the Pages

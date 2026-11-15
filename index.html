@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Leaf classifier running entirely in your browser: a MobileNet exported from the MLR exercise 8 notebook classifies your phone camera live.">
+<!-- An inline icon, so the browser's automatic /favicon.ico request does not
+     turn into a 404 and no extra file is fetched. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1512'/%3E%3Cpath d='M26 5C13 5 7 11 7 19c0 3.2 1.6 5.6 2.3 6.5.4-4.6 2.6-8.3 6.4-10.7-3.3 3.1-4.9 7.1-5.1 10.9h1.9c8.4 0 13.5-7 13.5-20.7z' fill='%237ed39a'/%3E%3C/svg%3E">
 <title>Leaf classifier · MLR ex08</title>
 <!--
   Leaf classifier — Machine Learning in Research (MLR), exercise 8, task 2f.
@@ -22,7 +25,10 @@
          leaf_model.onnx, model_info.json, check_expected.json, check_image.jpg
     2. ONNX Runtime Web, version-pinned, from jsDelivr (the WebAssembly
        runtime that executes the network) — a fixed library file, identical
-       for every visitor, carrying nothing about you or your camera.
+       for every visitor, carrying nothing about you or your camera. If that
+       CDN does not answer, the same pinned build is retried from unpkg.com,
+       so unpkg can appear in the log instead of jsDelivr; never both, and
+       never anything but the library itself.
   Nothing else: no fonts, no trackers, no external QR-picture service (the
   QR code at the bottom is an SVG drawn into this file).
 
@@ -189,10 +195,12 @@ const SELFTEST = params.get("selftest");
 
 let info = null;                  // model_info.json
 let session = null;               // ort.InferenceSession
+let loading = null;               // its load while it is still in flight
 let stream = null, facing = "environment";
 let running = false, busy = false, lastRun = 0;
 let fpsT = 0, frames = 0, fps = 0;
 let canvas, ctx, tensor;          // buffers allocated once and reused
+let stillURL = null;              // blob: URL of the photo currently shown
 
 function setStatus(msg, kind) { statusEl.textContent = msg; statusEl.className = kind || ""; }
 function report(o) {          // one JSON line per event, read by the headless test
@@ -265,8 +273,20 @@ function loadScript(src) {
   });
 }
 
-async function loadModel() {
-  if (session) return session;
+/* boot(), Start camera, Upload a photo and the self-check all call this. Only
+ * the finished session used to be cached, so a second caller that arrived
+ * while the 6.3 MB leaf_model.onnx was still downloading started a SECOND
+ * download of the same file (measured: 2 requests for it when Start camera is
+ * tapped during the load — on a phone plan that is 6.3 MB for nothing). The
+ * in-flight promise is shared now, so however many callers arrive, the model
+ * is fetched once. */
+function loadModel() {
+  if (session) return Promise.resolve(session);
+  if (!loading) loading = openSession().finally(() => { loading = null; });
+  return loading;
+}
+
+async function openSession() {
   let lastErr = null;
   for (const b of ORT_BUILDS) {
     try {
@@ -427,7 +447,9 @@ async function handleFile(file) {
   await loadModel();
   const img = await decodeImage(file);
   const w = img.width || img.naturalWidth, h = img.height || img.naturalHeight;
-  still.src = URL.createObjectURL(file);
+  if (stillURL) URL.revokeObjectURL(stillURL);   // free the previously shown photo
+  stillURL = URL.createObjectURL(file);
+  still.src = stillURL;
   still.style.display = "block";
   video.style.display = "none";
   const r = await classify(img, w, h, "photo " + w + "×" + h);
