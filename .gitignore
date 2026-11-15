@@ -3,3 +3,6 @@ data/
 *.pt
 __pycache__/
 train/weights/
+
+# archives are not hand-in material; GitHub also rejects files over 100 MB
+*.zip
